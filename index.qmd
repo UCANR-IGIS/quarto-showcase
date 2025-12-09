@@ -3,6 +3,6 @@ title: "Quarto Showcase"
 format: html
 ---
 
-[Part 1](pt1/slides.html)
+[Part 1](pt1/intro.html)
 
 [Part 2](pt2/html-outputs.html)

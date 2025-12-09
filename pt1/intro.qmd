@@ -1,0 +1,9 @@
+---
+title: "Quarto Showcase"
+author: ""
+format: revealjs
+theme: solarized
+css: ucanr-style.css
+toc: false
+---
+
