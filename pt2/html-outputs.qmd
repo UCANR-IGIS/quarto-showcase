@@ -4,21 +4,39 @@ format:
   revealjs:
     # smaller: false
     # fontsize: "28pt"
-    # scrollable: true      ## make all the slides scrollable
-    theme: solarized
+    theme: simple
+    logo: images/igis-logo_pin-only_80x100.png
+    footer: "Quarto Showcase"
+css: qmdpres.css
 ---
 
-# Anatomy of a Quarto Document
+## Anatomy of a Quarto Document
+
+::: {.notes}
+Open palmer-penguins.qmd in RStudio.
+
+Show them source vs. visual editing mode.
+
+Show them how to run code-chunks inline.
+
+Set the preview to Viewer Pane.
+
+Render the document to the Viewer Pane
+
+:::
+
+## Some of My Favorite Quarto YAML
+
+
+## Some of My Favorite Quarto Markdown
 
 
 
-# Favorite YAML
+
+## Example: Data Analysis Notebook
 
 
-# Data Analysis Notebook
-
-
-## My Favorite Features
+### My Favorite Features
 
 - author info
 - paged tabled
@@ -28,18 +46,53 @@ format:
 ## Examples
 
 
-
-# e-Books
-
-
-# Report generator
+## e-Books
 
 
+## Report generator
 
-# Presentations
 
-Three options:
+
+## Presentations
+
+Quarto can generate presentations in 3 formats:
 
 ![](./images/new-quarto-slides576x512x256.png)
+
+::: {.notes}
+You can create slides in revealjs, beamer (requires LaTeK), or PowerPoint
+:::
+
+
+## Presenting revealjs Slides
+
+|                          |                                                                            |
+|:------------------------:|:---------------------------------------------------------------------------|
+|`f`                       | full screen mode (`esc` to escape)                                         |
+|`s`                       | open Speaker View                                                       |
+|`alt + click`             | zoom in                                                                    |
+|`o`                       | overview mode                                                              |
+|`e`                       | toggle back/forth to pdf export mode (then print to PDF with your browser) |
+|`m`                       | toggle menu                                                                |
+|`?`                       | see more tips                                                              |
+
+::: {.notes}
+If you can't remember these keyboard shortcuts, just click the menu button and go to 'Tools'.
+:::
+
+## Getting Help: Guides, Community, Documentation
+
+### Present like a Pro
+
+- https://quarto.org/docs/presentations/revealjs/presenting.html
+
+### Tips 'n Tricks
+
+ - <https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day>
+
+## Publishing Your Content
+
+will come at end
+
 
 
