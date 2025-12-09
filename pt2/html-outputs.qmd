@@ -1,0 +1,45 @@
+---
+title: "Part 2: HTML Outputs"
+format: 
+  revealjs:
+    # smaller: false
+    # fontsize: "28pt"
+    # scrollable: true      ## make all the slides scrollable
+    theme: solarized
+---
+
+# Anatomy of a Quarto Document
+
+
+
+# Favorite YAML
+
+
+# Data Analysis Notebook
+
+
+## My Favorite Features
+
+- author info
+- paged tabled
+- interactive visualizations
+- footnotes  
+
+## Examples
+
+
+
+# e-Books
+
+
+# Report generator
+
+
+
+# Presentations
+
+Three options:
+
+![](./images/new-quarto-slides576x512x256.png)
+
+
