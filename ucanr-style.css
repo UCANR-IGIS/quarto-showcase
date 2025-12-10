@@ -49,6 +49,11 @@ h1,
   color: #024780!important; /* h1 text */
 }
 
+a {
+  color: #008fd5 !important; /* Change to any color you want */
+  font-weight: 600; /* Semibold */
+}
+
 /* sparkle effects! */
 
 @keyframes sad_sparkle {
