@@ -1,8 +1,9 @@
 ---
 title: "Quarto Showcase"
 format: html
+theme: solarized
+css: ucanr-style.css
 ---
+#### [Part 1 - Intro to Quarto](pt1/Quarto_Python_SlidesR.html)
 
-[Part 1 - Intro to Quarto](pt1/Quarto_Python_SlidesR.html)
-
-[Part 2 - HTML Outputs](pt2/html-outputs.html)
+#### [Part 2 - HTML Outputs](pt2/html-outputs.html)

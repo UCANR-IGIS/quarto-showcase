@@ -1,9 +1,10 @@
 ---
-title: "Quarto Showcase"
-author: ""
-format: revealjs
+pagetitle: "Quarto Showcase"
+format: 
+  revealjs:
+    title-slide: false
 theme: solarized
-css: ucanr-style.css
+css: ../ucanr-style.css
 toc: false
 ---
 
@@ -57,6 +58,75 @@ toc: false
 } 
 </style>
 
+<section data-auto-animate>
+<h1>Quarto Showcase</h1>
+<p>University of California, Agriculture and Natural Resources</p> 
+<p>2025-12-12</p>  
+![](image_assets/igis-logo_460x144%20(1).png)
+</section>
+
+<section data-auto-animate>
+<h1>Quarto Showcase</h1>
+<p>University of California, Agriculture and Natural Resources</p> 
+<p>2025-12-12</p>  
+![](image_assets/igis-logo_460x144%20(1).png)
+```{r}
+library(htmltools)
+
+# Folder with images
+img_folder <- "image_assets/staff_circles"
+
+# List PNG files
+img_files <- list.files(
+  img_folder, 
+  pattern = "^[167].*\\.png$", 
+  full.names = TRUE
+)
+
+# Labels for each image
+labels <- c(
+  "Andy Lyons",
+  "Genoa Starrs",
+  "Taiyu Guan"
+)
+
+# Build list of divs for each staff member
+staff_divs <- mapply(
+  function(img, label) {
+    label_html <- gsub(" ", "<br>", label)
+    
+    div(
+      style = "
+        text-align: center; 
+        font-size: 24px; 
+        font-weight: 500; 
+        line-height: 1.2em; 
+        color: #005fae; 
+      ",
+      tags$img(
+        src = img, 
+        width = "130px", 
+        style = "border-radius: 50%;"
+      ),
+      HTML("<br>"),
+      HTML(label_html)
+    )
+  },
+  img_files, 
+  labels, 
+  SIMPLIFY = FALSE
+)
+
+# Wrap in outer flexbox container
+htmltools::div(
+  style = "display: flex; justify-content: center; align-items: flex-start; gap: 15px;",
+  staff_divs
+)
+```
+
+</section> 
+
+
 <section data-transition="slide">
 <div style="display: flex; align-items: center; gap: 20px;">
   <h2 style="margin: 0; color:#005fae; font-weight:500;">
@@ -72,7 +142,11 @@ library(htmltools)
 img_folder <- "image_assets/staff_circles"
 
 # List PNG files
-img_files <- list.files(img_folder, pattern = "\\.png$", full.names = TRUE)
+img_files <- list.files(
+  img_folder,
+  pattern = "^[0123456].*\\.png$",
+  full.names = TRUE
+)
 
 # Labels for each image
 labels <- c(
@@ -265,9 +339,6 @@ htmltools::HTML('
   </ul>
 </section>
 
----
-
-
 <section data-auto-animate>
   <p>If you're used to <strong>Coding</strong> and:</p>
   <ul>
@@ -287,7 +358,6 @@ htmltools::HTML('
 Quarto is a **natural progression.**
 
 </section>
----
 
 <section data-auto-animate>
     <p>If you're used to **User Interfaces** like:<p>
@@ -308,8 +378,8 @@ Quarto is a **natural progression.**
 Quarto will have **more of a learning curve,** but is still useful!
 
 </section>
----
 
+<section>
 <p><strong>Presenting Code in Quarto</strong></p>
 <p>You can show code chunks easily in your presentation to show your work!</p>
 
@@ -342,13 +412,14 @@ p<- ggplot(UC_ANR, aes(x = CATEGORY, fill = AcademicTitle)) +
     panel.grid.minor = element_blank()
   )
 
-ggsave("transparent_plot.png", plot = p, bg = "transparent", width = 8, height = 5)
+ggsave("transparent_plot.png", plot = p, bg = "transparent", width = 8, height = 4)
 
 ```
 
----
+</section>
+
+<section>
 **Stacked Percentage of UC ANR Position Titles by Work Location**
 <img src="transparent_plot.png" width="1200">
-
----
+</section>
 

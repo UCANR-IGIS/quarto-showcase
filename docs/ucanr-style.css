@@ -30,3 +30,11 @@ ul li {
 .reveal h6 {
     text-transform: none;
 }
+
+/* Directions for when page is NOT revealjs but we want the theme to match*/
+html,
+body,
+.page-content,
+.quarto-content {
+  background-color: #fdf6e3 !important;
+}
