@@ -3,7 +3,6 @@ h1 {
   color: #024780 !important;
 }
 
-
 h2, h3, h4, h5, h6 {
   color: #005fae !important;
 }
@@ -37,4 +36,62 @@ body,
 .page-content,
 .quarto-content {
   background-color: #fdf6e3 !important;
+  color: #005fae;
+  font-family: Lato, sans-serif; /* main font for body text */
+}
+
+@import url('https://fonts.cdnfonts.com/css/league-gothic');
+
+/* Directions for when page is NOT revealjs but we want the theme to match*/
+html,
+h1,
+.page-content,
+.quarto-content {
+  color: #024780!important;
+}
+
+@keyframes sad_sparkle {
+  0%, 100% {
+    text-shadow:
+      0 0 5px #1E3A8A,
+      0 0 15px #6B21A8,
+      0 0 25px #8B5CF6,
+      0 0 35px #3B82F6;
+  }
+  50% {
+    text-shadow:
+      0 0 10px #6B21A8,
+      0 0 25px #8B5CF6,
+      0 0 40px #3B82F6,
+      0 0 55px #1E3A8A;
+  }
+}
+
+.sad_sparkle {
+  color: #1E3A8A;
+  animation: sad_sparkle 1.5s infinite alternate;
+}
+
+/* --- second animation --- */
+
+@keyframes sparkle {
+  0%, 100% {
+    text-shadow:
+      0 0 5px #FFFF33,
+      0 0 15px #FFEA00,
+      0 0 25px #FFD700,
+      0 0 35px #FFA500;
+  }
+  50% {
+    text-shadow:
+      0 0 10px #FFFF66,
+      0 0 25px #FFFF00,
+      0 0 40px #FFD700,
+      0 0 55px #FF8C00;
+  }
+}
+
+.sparkle {
+  color: #FFD700;
+  animation: sparkle 1s infinite alternate;
 }

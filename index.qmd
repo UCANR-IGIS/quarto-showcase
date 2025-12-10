@@ -1,9 +1,29 @@
 ---
-title: "Quarto Showcase"
+title: ""
 format: html
 theme: solarized
 css: ucanr-style.css
 ---
-#### [Part 1 - Intro to Quarto](pt1/Quarto_Python_SlidesR.html)
+
+<h1 style="font-size:48px;"><strong>Quarto Showcase</strong></h1>
+<span style="font-size:24px;color: #005fae;"><em>12-12-2025</em><br></span>
+
+<div style="text-align:center;">
+:::: {.columns gap="1em"}
+::: {.column}
+![](pt1/image_assets/UCCE_Color.png){width=400}
+:::
+::: {.column}
+![](pt1/image_assets/igis-logo_460x144 (1).png){width=400}
+:::
+::::
+</div>
+
+#### [Part 1 - Intro to Quarto](pt1/Quarto_R_Slides.html)
 
 #### [Part 2 - HTML Outputs](pt2/html-outputs.html)
+
+#### [Part 3 - HTML Outputs]()
+
+#### [Part 4 - Other Resources]()
+
