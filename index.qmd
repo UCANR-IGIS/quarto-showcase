@@ -23,7 +23,7 @@ css: ucanr-style.css
 
 #### [Part 2 - HTML Outputs](pt2/html-outputs.html)
 
-#### [Part 3 - HTML Outputs]()
+#### [Part 3 - Getting Your Work Out There](pt3/QS_Part3.html)
 
-#### [Part 4 - Other Resources]()
+#### [Part 4 - Bonus Quarto!](pt4/QS_Part4.html)
 

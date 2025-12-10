@@ -1,0 +1,24 @@
+---
+pagetitle: "Part 4: Bonus Quarto!"
+format: 
+  revealjs:
+    title-slide: false
+theme: solarized
+css: ../ucanr-style.css
+toc: false
+---
+
+<section data-transition="convex">
+<h1 class="sparkle" style="font-weight:bold;">Bonus Quarto!</h1>
+<span style="font-size:36px;color: #005fae;">12-12-2025<br></span>
+<div style="text-align:center;">
+:::: {.columns gap="2em"}
+::: {.column}
+![](image_assets/UCCE_Color.png){width=400}
+:::
+::: {.column}
+![](image_assets/igis-logo_460x144 (1).png){width=400}
+:::
+::::
+</div>
+</section>

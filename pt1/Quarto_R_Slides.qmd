@@ -1,6 +1,7 @@
 ---
-pagetitle: "Quarto Showcase"
-format: 
+title: ""
+pagetitle: "Part 1: Intro to Quarto"
+format:
   revealjs:
     title-slide: false
 theme: solarized
@@ -172,12 +173,75 @@ htmltools::div(
     <li class="fragment">Open source</li>
     <li class="fragment">Reproducible content (generate and RE-generate lots of reports)</li>
     <li class="fragment">Multi-lingual (R, Python, Julia)</li>
+  </ul>
+</section>
+
+<section>
+<p><strong>Include your code!</strong></p>
+
+```{r}
+#| echo: true   # show the code
+#| eval: true
+# Import packages
+library(ggplot2)
+library(sf)
+
+# Read the UCANR data
+UC_ANR <- sf::st_read("UC_ANR.gpkg", quiet = TRUE)
+
+# Use ggplot2 to plot the data
+p<- ggplot(UC_ANR, aes(x = CATEGORY, fill = AcademicTitle)) +
+  geom_bar(position = "fill") +
+  scale_y_continuous(labels = scales::percent_format()) +
+  labs(
+    x = "Work Location Type",
+    y = "Percent of Positions",
+    fill = "Job Titles"
+  ) +
+  theme_minimal() +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    # Specify a transparent background
+    panel.background = element_rect(fill = "transparent", color = NA),
+    plot.background  = element_rect(fill = "transparent", color = NA),
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank()
+  )
+
+ggsave("transparent_plot.png", plot = p, bg = "transparent", width = 8, height = 4)
+
+```
+
+</section>
+
+<section>
+<p><strong>... And show the output.</strong></p>
+**Stacked Percentage of UC ANR Position Titles by Work Location**
+<img src="transparent_plot.png" width="1200">
+</section>
+
+<section data-transition="slide">
+  <h1 style="color: #024780;">Why <br> <span style="color: #005fae;">NOT </span><span class="sparkle" style="font-weight:bold; color: #005fae;">Quarto</span>?
+  </h1>
+  <ul>
+    <li>Cross-platform (windows, macOS)</li>
+    <li>Open source</li>
+    <li>Reproducible content (generate and RE-generate lots of reports)</li>
+    <li>Multi-lingual (R, Python, Julia)</li>
     <li class="fragment">Flexible output formats (HTML, PDF, Word, slides, books, dashboards)</li>
     <li class="fragment">Customizable (create your own templates, or use built-in options)</li>
     <li class="fragment">Leverages existing ecosystem of extensions for R and Python (like soils)</li>
     <li class="fragment">Supports interactive content!</li>
   </ul>
 </section>
+
+
+
+
+
+
+
+
 
 <section data-transition="slide">
 <div style="display: flex; align-items: center; gap: 20px;">
@@ -315,67 +379,40 @@ Quarto is a **natural progression.**
 
 </section>
 
-<section data-auto-animate>
-    <p>If you're used to **User Interfaces** like:<p>
-  <ul>
-    <li style="color: #005fae;">Word</li>
-    <li style="color: #005fae;">Powerpoint</li>
-    <li style="color: #005fae;">Google Docs</li>
-  </ul>
-</section>
-
-<section data-auto-animate>
+<section data-transition="fade">
     <p>If you're used to **User Interfaces** like:<p>
   <ul>
     <li style="color: #005fae;">Word</li>
     <li style="color: #005fae;">Powerpoint</li>
     <li style="color: #005fae;">Google Docs</li>
     </ul>
-Quarto will have **more of a learning curve,** but is still useful!
-
+<p class="fragment" fade-up>Quarto will have **more of a learning curve,** but is still useful!</p><br>
 </section>
 
-<section>
-<p><strong>Presenting Code in Quarto</strong></p>
-<p>You can show code chunks easily in your presentation to show your work!</p>
+<section data-transition="convex">
+  <p> Overall, it has lots of fun bells and whistles for those who take the time to explore it.</p>
+  <pre><code data-trim data-noescape>
+{mermaid}
+flowchart LR
+  A[You] --> B(See this webinar)
+  B --> C{Explore Quarto?}
+  C --> D(Yes)
+  C --> E(No)
+  D --> F[Happy Joyful Reproducible]
+  E --> G[Click and Drag 4 Life Also Fine]
+  </code></pre><br>
 
-```{r}
-#| echo: true   # show the code
-#| eval: true
-# Import packages
-library(ggplot2)
-library(sf)
-
-# Read the UCANR data
-UC_ANR <- sf::st_read("UC_ANR.gpkg", quiet = TRUE)
-
-# Use ggplot2 to plot the data
-p<- ggplot(UC_ANR, aes(x = CATEGORY, fill = AcademicTitle)) +
-  geom_bar(position = "fill") +
-  scale_y_continuous(labels = scales::percent_format()) +
-  labs(
-    x = "Work Location Type",
-    y = "Percent of Positions",
-    fill = "Job Titles"
-  ) +
-  theme_minimal() +
-  theme(
-    axis.text.x = element_text(angle = 45, hjust = 1),
-    # Specify a transparent background
-    panel.background = element_rect(fill = "transparent", color = NA),
-    plot.background  = element_rect(fill = "transparent", color = NA),
-    panel.grid.major = element_blank(),
-    panel.grid.minor = element_blank()
-  )
-
-ggsave("transparent_plot.png", plot = p, bg = "transparent", width = 8, height = 4)
-
+<div style="text-align:center;">
+```{mermaid}
+%%{init: {"flowchart": {"curve": "linear", "nodeSpacing": 50, "rankSpacing": 50}}}%%
+flowchart LR
+  A[You] --> B(See this webinar)
+  B --> C{Explore\nQuarto?}
+  C --> D(Yes)
+  C --> E(No)
+  D --> F[Happy Joyful \nReproducible]
+  E --> G[Click and Drag 4 Life \nAlso Fine]
 ```
 
+</div>
 </section>
-
-<section>
-**Stacked Percentage of UC ANR Position Titles by Work Location**
-<img src="transparent_plot.png" width="1200">
-</section>
-

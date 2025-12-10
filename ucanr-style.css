@@ -96,3 +96,24 @@ h1,
   color: #FFD700;
   animation: sparkle 1s infinite alternate;
 }
+
+.mermaid svg {
+  background: transparent !important;
+}
+
+
+/* Center Mermaid diagrams without stretching */
+.mermaid {
+  display: flex;             /* use flex to center content */
+  justify-content: center;   /* horizontal centering */
+  width: 100%;               /* full slide container width */
+  margin: 0 auto;
+}
+
+/* Ensure SVG scales naturally without stretching */
+.mermaid svg {
+  display: inline-block;     /* prevent stretching to 100% */
+  max-width: 90%;            /* scale down if too wide */
+  height: auto;              /* maintain aspect ratio */
+  background: transparent !important;
+}

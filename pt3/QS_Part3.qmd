@@ -1,0 +1,43 @@
+---
+pagetitle: "Part 3: How to get your work out there!"
+format: 
+  revealjs:
+    title-slide: false
+theme: solarized
+css: ../ucanr-style.css
+toc: false
+---
+
+<section data-transition="convex">
+<h1>How to get your work out there!</h1>
+<span style="font-size:36px;color: #005fae;">12-12-2025<br></span>
+<div style="text-align:center;">
+:::: {.columns gap="2em"}
+::: {.column}
+![](image_assets/UCCE_Color.png){width=400}
+:::
+::: {.column}
+![](image_assets/igis-logo_460x144 (1).png){width=400}
+:::
+::::
+</div>
+</section>
+
+<section data-transition="slide">
+<h2>Traditional Formats</h2>
+  <ul>
+    <li class="fragment">[Word](https://quarto.org/docs/reference/formats/docx.html)</li>
+    <li class="fragment">[pdf](https://quarto.org/docs/output-formats/pdf-basics.html)</li>
+    <li class="fragment">[Typst](https://quarto.org/docs/output-formats/typst.html), an open-source typesetting system (revised LaTeX).</li>
+</section>
+
+<section data-transition="slide">
+<h2>Less Traditional Formats</h2>
+<p> allow us to take advantage of some of the cooler bells and whistles Quarto offers!</p>
+<p> [HTML](https://quarto.org/docs/output-formats/html-basics.html) offers great interaction with other platforms and many possibilities:</p>
+  <ul>
+    <li class="fragment"> [Webpages](https://ucanr-igis.github.io/quarto-showcase/)</li>
+    <li class="fragment"> Blogs</li>
+    <li class="fragment"> Slides (like these made using [revealjs](https://quarto.org/docs/presentations/revealjs/))</li>
+    <li class="fragment"> Widgets (like the intro map) and [dashboards](https://jjallaire.shinyapps.io/penguins-dashboard/).</li>
+</section>
