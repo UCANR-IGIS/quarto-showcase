@@ -13,11 +13,13 @@ body {
 
 p, li {
   color: #024780 !important;
+  font-size: 30px;
 }
 
 /* Optional: lists */
 ul li {
   color: #005fae !important;
+  font-size: 30px;
 }
 
 /* Make all headers normal case */

@@ -135,6 +135,30 @@ htmltools::div(
 
 </section>
 
+<section data-auto-animate>
+  <h1>What is</h1>
+  <h1>Quarto</h1>
+</section>
+
+<section data-auto-animate>
+  <h1>Quarto</h1>
+<p><em>"An open-source scientific and technical publishing system"</p></em>
+</section>
+
+<section data-auto-animate>
+  <h1>Quarto</h1>
+<p><em>"An open-source scientific and technical publishing system"</p></em><br>
+<p>Create reproducible documents, presentations, and websites using text, code, and data.</p>
+</section>
+
+<section data-auto-animate>
+  <h1>Quarto</h1>
+<p><em>"An open-source scientific and technical publishing system"</p></em><br>
+<p>Create reproducible documents, presentations, and websites using text, code, and data.</p><br>
+<p>A successor to R Markdown</p><br>
+</section>
+
+
 
 <section data-transition="slide">
   <h1 style="color: #024780;">Why</h1>
@@ -144,14 +168,14 @@ htmltools::div(
   <h1 style="color: #024780;">Why <br> <span style="color: #005fae;">NOT </span><span class="sparkle" style="font-weight:bold; color: #005fae;">Quarto</span>?
   </h1>
   <ul>
-    <li class="fragment" style="color: #005fae; font-size: 24px;">Cross-platform</li>
-    <li class="fragment" style="color: #005fae; font-size: 24px;">Open source</li>
-    <li class="fragment" style="color: #005fae; font-size: 24px;">Reproducible content</li>
-    <li class="fragment" style="color: #005fae; font-size: 24px;">Multi-lingual / polyglot - R, Python, Julia</li>
-    <li class="fragment" style="color: #005fae; font-size: 24px;">Flexible output formats (HTML, PDF, Word, slides, books, dashboards)</li>
-    <li class="fragment" style="color: #005fae; font-size: 24px;">Customizable (Templates or create your own!)</li>
-    <li class="fragment" style="color: #005fae; font-size: 24px;">Leverages existing ecosystem of extensions for R and Python (like soils)</li>
-    <li class="fragment" style="color: #005fae; font-size: 24px;">Supports interactive content!</li>
+    <li class="fragment">Cross-platform (windows, macOS)</li>
+    <li class="fragment">Open source</li>
+    <li class="fragment">Reproducible content (generate and RE-generate lots of reports)</li>
+    <li class="fragment">Multi-lingual (R, Python, Julia)</li>
+    <li class="fragment">Flexible output formats (HTML, PDF, Word, slides, books, dashboards)</li>
+    <li class="fragment">Customizable (create your own templates, or use built-in options)</li>
+    <li class="fragment">Leverages existing ecosystem of extensions for R and Python (like soils)</li>
+    <li class="fragment">Supports interactive content!</li>
   </ul>
 </section>
 
@@ -165,7 +189,7 @@ htmltools::div(
 
 ```{r, message=FALSE}
 #| column: screen-inset
-#| fig-cap: "UC ANR Locations"
+
 library(sf)
 library(leaflet)
 library(htmlwidgets)
@@ -247,53 +271,45 @@ m
 # ')
 ```
 
-<div style="text-align:center; font-size:18px; color:#005fae; font-weight:400; font-style:italic; margin-top:15px; line-height:1.4;"> 
-"Connecting the power of UC research with local communities to improve the lives of all Californians." 
+<div style="text-align:center; color:#005fae; font-weight:400; font-style:italic; margin-top:15px; line-height:1.4;"> 
+<p style="font-size:20px !important;">"Connecting the power of UC research with local communities to improve the lives of all Californians."</p>
 </div> 
 </section>
 
 
 <section data-transition="slide">
-... No really,
+<p stye="font-size:42px">... No really,</p>
 </section>
 
-<section data-auto-animate>
+<section data-transition="slide">
  <h1 style="color: #024780;">Why <br> <span style="color: #005fae;">NOT</span>
  </span><span class="sad_sparkle" style="font-weight:bold; color: #ffff"> Quarto</span>?
   </h1>
   <ul>
-    <li class="fragment" style="color: #005fae; font-size: 24px;">Loss of click-and-drag</li>
-    <li class="fragment" style="color: #005fae; font-size: 24px;">Relatively new on the scene</li>
-    <li class="fragment" style="color: #005fae; font-size: 24px;">Learning curve</li>
-  </ul>
-</section>
-
-<section data-auto-animate>
-  <h1 style="color: #024780;">Why <br> <span style="color: #005fae;">NOT</span></span><span class="sad_sparkle" style="font-weight:bold; color: #ffff"> Quarto</span>?
-  </h1>
-  <ul>
-    <li style="color: #005fae; font-size: 24px;">Loss of click-and-drag</li>
-    <li style="color: #005fae; font-size: 24px;">Relatively new on the scene</li>
-    <li style="color: #005fae; font-size: 24px;">Learning curve</li>
-    <li style="color: #005fae; font-size: 24px;">**especially for non-coders!**</li>
+    <li class="fragment">Loss of click-and-drag</li>
+    <li class="fragment">Relatively new on the scene</li>
+    <li class="fragment">Learning curve</li>
+    <li class="fragment">**especially for non-coders!**</li>
+    <li class="fragment fade-left">You have to tell the computer what you want in language it understands</li>
+    <li class="fragment fade-left">... and it will give you <em>EXACTLY</em> what you ask for.</li>
   </ul>
 </section>
 
 <section data-auto-animate>
   <p>If you're used to <strong>Coding</strong> and:</p>
   <ul>
-    <li style="color: #005fae; font-size: 24px;">R Markdown </li>
-    <li style="color: #005fae; font-size: 24px;">R or Python</li>
-    <li style="color: #005fae; font-size: 24px;">Jupyter Notebooks</li>
+    <li>R Markdown </li>
+    <li>R or Python</li>
+    <li>Jupyter Notebooks</li>
   </ul>
 </section>
 
 <section data-auto-animate>
   <p>If you're used to <strong>Coding</strong> and:</p>
   <ul>
-    <li style="color: #005fae; font-size: 24px;">R Markdown </li>
-    <li style="color: #005fae; font-size: 24px;">R or Python</li>
-    <li style="color: #005fae; font-size: 24px;">Jupyter Notebooks</li>
+    <li style="color: #005fae;">R Markdown </li>
+    <li style="color: #005fae;">R or Python</li>
+    <li style="color: #005fae;">Jupyter Notebooks</li>
     </ul>
 Quarto is a **natural progression.**
 
@@ -302,18 +318,18 @@ Quarto is a **natural progression.**
 <section data-auto-animate>
     <p>If you're used to **User Interfaces** like:<p>
   <ul>
-    <li style="color: #005fae; font-size: 24px;">Word</li>
-    <li style="color: #005fae; font-size: 24px;">Powerpoint</li>
-    <li style="color: #005fae; font-size: 24px;">Google Docs</li>
+    <li style="color: #005fae;">Word</li>
+    <li style="color: #005fae;">Powerpoint</li>
+    <li style="color: #005fae;">Google Docs</li>
   </ul>
 </section>
 
 <section data-auto-animate>
     <p>If you're used to **User Interfaces** like:<p>
   <ul>
-    <li style="color: #005fae; font-size: 24px;">Word</li>
-    <li style="color: #005fae; font-size: 24px;">Powerpoint</li>
-    <li style="color: #005fae; font-size: 24px;">Google Docs</li>
+    <li style="color: #005fae;">Word</li>
+    <li style="color: #005fae;">Powerpoint</li>
+    <li style="color: #005fae;">Google Docs</li>
     </ul>
 Quarto will have **more of a learning curve,** but is still useful!
 

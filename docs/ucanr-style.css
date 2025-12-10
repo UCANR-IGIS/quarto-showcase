@@ -13,11 +13,13 @@ body {
 
 p, li {
   color: #024780 !important;
+  font-size: 30px;
 }
 
 /* Optional: lists */
 ul li {
   color: #005fae !important;
+  font-size: 30px;
 }
 
 /* Make all headers normal case */
@@ -40,15 +42,14 @@ body,
   font-family: Lato, sans-serif; /* main font for body text */
 }
 
-@import url('https://fonts.cdnfonts.com/css/league-gothic');
-
-/* Directions for when page is NOT revealjs but we want the theme to match*/
 html,
 h1,
 .page-content,
 .quarto-content {
-  color: #024780!important;
+  color: #024780!important; /* h1 text */
 }
+
+/* sparkle effects! */
 
 @keyframes sad_sparkle {
   0%, 100% {
