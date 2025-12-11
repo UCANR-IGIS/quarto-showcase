@@ -1,5 +1,6 @@
 ---
 title: "Part 2: HTML Outputs"
+pagetitle: "Quarto Pt2"
 format: 
   revealjs:
     theme: simple
@@ -8,18 +9,22 @@ format:
     fontsize: "24pt"
     # footer: "Quarto Showcase"
     logo: images/igis-ucce.svg
-    code-block-height: 650px
-    css: qmdpres.css
+    code-block-height: 600px
+    css: 
+      - ../ucanr-style.css
+      - pt2.css
+engine: knitr
 ---
 
 ## It all starts with a qmd file
 
+\
 
 ![](./images/render_btn_168x50.png){style="display:block; margin:1em auto; width:130px;"}
 
 ::: {style="text-align: center;"}
 
-```{mermaid}
+```{mermaid, cache = TRUE}
 flowchart LR
   A[qmd] --> B(Jupyter)
   A --> C(knitr)
@@ -38,7 +43,7 @@ flowchart LR
 
 ## Anatomy of a Quarto Document
 
-```` markdown
+````{verbatim, lang="markdown"}
 ---
 title: "The Palmer Penguins"
 format: html
@@ -80,22 +85,17 @@ ggplot(penguins, aes(x = species, y = body_mass)) +
 \
 
 ::: {.notes}
-Quarto files are plain text.
-
-Open palmer-penguins.qmd in RStudio.
-
-Show source vs. visual editing mode.
-
-Show the YAML, paragraph text, code chunks.
-
-How to run code-chunks inline.
-
-Set the preview to Viewer Pane.
-
-Render the document to the Viewer Pane
+- Quarto files are plain text.  
+- Open palmer-penguins.qmd in RStudio.  
+- Show source vs. visual editing mode.  
+- Show the YAML, paragraph text, code chunks.  
+- How to run code-chunks inline.  
+- Set the preview to Viewer Pane.  
+- Render the document to the Viewer Pane  
 :::
 
 ## Example: Data Analysis Notebook
+
 \
 
 :::{style="text-align:center;"}
@@ -103,17 +103,18 @@ Render the document to the Viewer Pane
 :::
 
 ::: {.notes}
-Highlights:
-- header
-- enhanced author info
-- table of contents pane
-- anchors at all headings
-- footnotes
-- code chunks: copy button
-- code chunks: code links
-- widgets
-- callout blocks
-- emoji (Which attribute field contains the ‘crop’?)
+Show them:
+
+- header  
+- enhanced author info  
+- table of contents pane  
+- anchors at all headings  
+- footnotes  
+- code chunks: copy button  
+- code chunks: code links  
+- widgets  
+- callout blocks  
+- emoji (Which attribute field contains the ‘crop’?)  
 :::
 
 
@@ -123,9 +124,9 @@ Highlights:
 
 Quarto has several 'callout blocks' that you can use to add text boxes.
 
-```` markdown
+````{verbatim, lang="markdown"}
 ::: {.callout-important}
-## Don't foreget to add a user-agent to your `httr2` header
+## Don't forget to add a user-agent to your `httr2` header
 
 The __User-Agent__ header is an HTTP header intended to identify the user agent responsible 
 for making a given HTTP request. 
@@ -137,7 +138,7 @@ for making a given HTTP request.
 :::
 
 ::: {.callout-important}
-## Don't foreget to add a user-agent to your `httr2` header
+## Don't forget to add a user-agent to your `httr2` header
 
 The __User-Agent__ header is an HTTP header intended to identify the user agent responsible for making a given HTTP request. 
 :::
@@ -152,7 +153,9 @@ Other callout types: `note`, `warning`, `tip`, `caution`
 
 Hyperlinks are easy to add to text. 
 
-```` markdown
+\
+
+````{verbatim, lang="markdown"}
 For more info, please visit our [training page](https://igis.ucanr.edu/Training/).
 ````
 
@@ -167,7 +170,7 @@ For more info, please visit our [training page](https://igis.ucanr.edu/Training/
 ::: {.callout-tip}
 If you want a hyperlink to open in a **new tab**, add the target attribute:
 
-```` markdown
+````{verbatim, lang="markdown"}
 For more info, please visit our [training page](https://igis.ucanr.edu/Training/){target='_blank'}.
 ````
 
@@ -181,7 +184,7 @@ See also https://quarto.org/docs/authoring/markdown-basics.html
 
 \
 
-Sometimes, you just want a...
+Sometimes, you just want an actual...
 
 \
 
@@ -193,9 +196,11 @@ line!!
 
 \
 
+::: {style="text-align:center;"}
 Your best friend: `\`
+:::
 
-```` markdown
+````{verbatim, lang="markdown"}
 Spread
 
 \
@@ -208,11 +213,15 @@ out!
 ````
 
 
+::: {.notes}
+There should not be a space after the \
+:::
+
 ## Markdown favorites: Footnotes
 
 \
 
-```` markdown
+````{verbatim, lang="markdown"}
 Growers in the Valley may have to manage one additional generation of Navel orangeworm each 
 season under climate change [^1].
 
@@ -265,10 +274,8 @@ author:
 
 
 
-## Examples
+## Example: e-Book
 
-
-## e-Books
 
 
 ## Report generator

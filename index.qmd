@@ -1,20 +1,21 @@
 ---
 title: ""
+pagetitle: "Quarto Showcase"
 format: html
 theme: solarized
 css: ucanr-style.css
 ---
 
 <h1 style="font-size:48px;"><strong>Quarto Showcase</strong></h1>
-<span style="font-size:24px;color: #005fae;"><em>12-12-2025</em><br></span>
+<span style="font-size:24px;color: #005fae;"><em>12-11-2025</em><br></span>
 
 <div style="text-align:center;">
-:::: {.columns gap="1em"}
+:::: {.columns gap="3em"}
 ::: {.column}
 ![](pt1/image_assets/UCCE_Color.png){width=400}
 :::
 ::: {.column}
-![](pt1/image_assets/igis-logo_460x144 (1).png){width=400}
+![](pt1/image_assets/igis-logo_460x144 (1).png){width=400 style="margin-left:2em;"}
 :::
 ::::
 </div>
@@ -23,12 +24,11 @@ css: ucanr-style.css
 
 ### [Part 2 - HTML Outputs](pt2/html-outputs.html)
 
+### Part 3 - Case Study: Using Quarto to Generate Custom Soil Reports 
+
+- renumber Part 3 & 4 to become Part 4 & 5
+
 ### [Part 3 - Getting Your Work Out There](pt3/QS_Part3.html)
 
 ### [Part 4 - Bonus Quarto!](pt4/QS_Part4.html)
 
-<<<<<<< Updated upstream
-=======
-[Part 2 - HTML Outputs](pt2/html-outputs.html)
-
->>>>>>> Stashed changes
