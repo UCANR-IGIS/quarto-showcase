@@ -12,7 +12,7 @@ code-block-height: 550px
 
 <section data-transition="convex">
 <h1 class="sparkle" style="font-weight:bold;">Bonus Quarto!</h1>
-<span style="font-size:36px;color: #005fae;">12-12-2025<br></span>
+<span style="font-size:36px;color: #005fae;">12-11-2025<br></span>
 <div style="text-align:center;">
 :::: {.columns gap="2em"}
 ::: {.column}
@@ -24,3 +24,84 @@ code-block-height: 550px
 ::::
 </div>
 </section>
+
+## Quarto Scrollytelling
+
+<p>[**Closeread: bringing Scrollytelling to Quarto**](https://posit.co/blog/closeread-prize-winners/)</p>  
+[**Euro Final Scrollytelling Analysis**](https://data-kicks.github.io/euro_final_scrollytelling_analysis/euro_final_scrollytelling_analysis.html)  
+
+:::{.column-screen}
+[**CATANberra**](https://rpubs.com/BCochrane/CATANberra)
+![](image_assets/catanberra.png)
+:::
+
+---
+
+## [Quarto Live](https://r-wasm.github.io/quarto-live/)
+
+<p>HTML pages with runnable code chunks, hints, and answers</p>
+
+```{=html}
+<iframe width="100%" height="500" src="https://r-wasm.github.io/quarto-live/" title="Webpage example"></iframe>
+```
+---
+
+## [Quarto Dashboard Gallery](https://quarto.org/docs/gallery/)
+
+```{=html}
+<iframe width="100%" height="500" src="https://pub.demo.posit.team/public/nz-quakes/quakes.html" title="Webpage example"></iframe>
+```
+
+---
+
+## Quarto Academic Websites and Journal Articles
+
+Quarto can be used to integrate some [journal-specific templates](https://quarto.org/docs/journals/) (!!!)
+
+:::: {.columns gap=".2em"}
+::: column
+- ACM
+- PLOS
+:::
+::: column
+- ASA
+- Elsevier
+:::
+::::
+
+---
+
+## Quarto Academic Websites and Journal Articles
+
+... and create beautiful websites.
+
+:::: {.columns gap=".2em"}
+::: column
+- [Example 1: Dr. Ganghe](https://drganghe.github.io/quarto-academic-site-examples.html)  
+:::
+::: column
+- [Example 2: Silvia Canelon](https://silviacanelon.com/)  
+:::
+::::
+
+```{=html}
+<iframe width="100%" height="450" src="https://silviacanelon.com/" title="Webpage example"></iframe>
+```
+---
+
+## Quarto Emails and Other Topics
+
+[PositConf:2024 talks](https://quarto.org/docs/blog/posts/2024-11-06-conf-talks/) 
+
+[PositConf:2025 talks](https://quarto.org/docs/blog/posts/2025-11-24-conf-talk-videos/)
+
+- Custom internal templates and Reporting
+- Reproducible, dynamic, and elegant books with Quarto
+- Dynamic Data Storytelling with Quarto Emails
+- JSquarto: Bridging JavaScript Documentation with Quarto’s Power
+- DataPages for interactive data sharing using Quarto
+- Democratizing Organizational Surveys with Quarto and Shiny
+- surveydown: A Markdown-Based Platform for Interactive Surveys
+- AI and LLM topics
+
+---
