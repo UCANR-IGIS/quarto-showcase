@@ -7,11 +7,9 @@ format:
     auto-stretch: false
     # smaller: false
     fontsize: "24pt"
-    # footer: "Quarto Showcase"
     logo: images/igis-ucce.svg
     code-block-height: 600px
     css: 
-      - ../ucanr-style.css
       - pt2.css
 engine: knitr
 ---
@@ -145,7 +143,9 @@ The __User-Agent__ header is an HTTP header intended to identify the user agent 
 
 \
 
+::: {.centerme}
 Other callout types: `note`, `warning`, `tip`, `caution`
+:::
 
 ## Markdown favorites: Hyperlinks
 
@@ -295,33 +295,51 @@ You can create slides in revealjs, beamer (requires LaTeK), or PowerPoint
 
 ## Presenting revealjs Slides
 
+\
+
 |                          |                                                                            |
 |:------------------------:|:---------------------------------------------------------------------------|
 |`f`                       | full screen mode (`esc` to escape)                                         |
-|`s`                       | open Speaker View                                                       |
+|`s`                       | open Speaker View                                                          |
 |`alt + click`             | zoom in                                                                    |
 |`o`                       | overview mode                                                              |
-|`e`                       | toggle back/forth to pdf export mode (then print to PDF with your browser) |
+|`e`                       | toggle back/forth to pdf export mode                                       |
 |`m`                       | toggle menu                                                                |
 |`?`                       | see more tips                                                              |
+
+\
+
+::: {.callout-tip}
+More tips at: <https://quarto.org/docs/presentations/revealjs/presenting.html>
+:::
 
 ::: {.notes}
 If you can't remember these keyboard shortcuts, just click the menu button and go to 'Tools'.
 :::
 
-## Quarto Websites
+## Other Quarto HTML Outputs
 
 \
 
-:::{style="text-align:center;"}
+::: {.centerme}
+Websites:   
 [https://nasa-openscapes.github.io/](https://nasa-openscapes.github.io/){target="_blank" rel="noopener"}
+
+\
+
+Scrollytelling:  
+[https://closeread.dev/gallery/](https://closeread.dev/gallery/){target="_blank" rel="noopener"}
+
+\
+
+Dashboards:  
+[https://quarto.org/docs/gallery/#dashboards](https://quarto.org/docs/gallery/#dashboards){target="_blank" rel="noopener"}
 :::
+
 
 ## Getting Help: Guides, Community, Documentation
 
-### Present like a Pro
-
-- https://quarto.org/docs/presentations/revealjs/presenting.html
+\
 
 ### Tips 'n Tricks
 

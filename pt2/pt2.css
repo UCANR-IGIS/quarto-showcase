@@ -16,3 +16,16 @@ div.downarrow {
   font-weight: bold;
   margin: 0 0 0.6em 0;
 }
+.reveal-viewport {
+  background-color: #fdf6e3 !important;
+}
+div.callout {
+  background-color: #fff;
+}
+div.centerme {
+  text-align:center;
+}
+svg#mermaid-1 {
+  max-width: 800px !important;
+}
+

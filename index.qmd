@@ -1,7 +1,11 @@
 ---
 title: ""
 pagetitle: "Quarto Showcase"
-format: html
+format:
+  html:
+    include-in-header:
+      - text: |
+         <link rel = "shortcut icon" href = "igis_64x64.png" />
 theme: solarized
 css: ucanr-style.css
 ---
@@ -10,7 +14,7 @@ css: ucanr-style.css
 <span style="font-size:24px;color: #005fae;"><em>12-11-2025</em><br></span>
 
 <div style="text-align:center;">
-:::: {.columns gap="3em"}
+:::: {.columns gap="1em"}
 ::: {.column}
 ![](pt1/image_assets/UCCE_Color.png){width=400}
 :::
