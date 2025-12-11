@@ -320,6 +320,9 @@
       margin-right: 0; 
     }
   </style>
+  <script src="QS_Part3_files/libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="QS_Part3_files/libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="QS_Part3_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -433,6 +436,25 @@ Example: <a href="https://nasa-openscapes.github.io/">NASA Openscapes Page</a> a
 <p class="fragment">
 There are <a href="https://quarto.org/docs/publishing/">MANY</a> options for publishing, but GitHub tends to be favored by academics since it also offers version control and collaborative project management.
 </p>
+</section>
+<section>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+    A[Write content in Quarto] --&gt; B[Render to HTML]
+    B --&gt; C[Preview in browser]
+    C --&gt; D[Publish online&lt;br&gt;(GitHub Pages, RStudio Connect, Netlify)]
+    A --&gt; E[Use Markdown, R/Python/Julia chunks,&lt;br&gt;and Visualizations]
+    D --&gt; F[Share with audience]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 </section>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">

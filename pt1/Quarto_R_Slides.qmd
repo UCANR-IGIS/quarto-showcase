@@ -4,7 +4,14 @@ pagetitle: "Part 1: Intro to Quarto"
 format:
   revealjs:
     title-slide: false
-theme: solarized
+    theme: solarized
+    # smaller: false
+    fontsize: "24pt"
+    logo: image_assets/igis-ucce.svg
+    code-block-height: 550px
+    mermaid:
+      flowchart:
+        curve: linear
 css: ../ucanr-style.css
 toc: false
 ---
@@ -13,7 +20,7 @@ toc: false
 
 <section data-transition="fade">
 <h1>Quarto Showcase</h1>
-<span style="font-size:36px;color: #005fae;">12-12-2025<br></span>
+<span style="font-size:36px;color: #005fae;">12-11-2025<br></span>
 <div style="text-align:center;">
 :::: {.columns gap="2em"}
 ::: {.column}
@@ -390,7 +397,7 @@ Quarto is a **natural progression.**
 </section>
 
 <section data-transition="convex">
-  <p> Overall, it has lots of fun bells and whistles for those who take the time to explore it.</p>
+  <p> Overall, it has lots of fun bells and whistles for those who take the time to explore it!</p>
   <pre><code data-trim data-noescape>
 {mermaid}
 flowchart LR
@@ -403,15 +410,17 @@ flowchart LR
   </code></pre><br>
 
 <div style="text-align:center;">
+
 ```{mermaid}
-%%{init: {"flowchart": {"curve": "linear", "nodeSpacing": 50, "rankSpacing": 50}}}%%
 flowchart LR
+  classDef myStyle font-size:14px;
   A[You] --> B(See this webinar)
-  B --> C{Explore\nQuarto?}
+  B --> C{Explore \nQuarto?}
   C --> D(Yes)
   C --> E(No)
   D --> F[Happy Joyful \nReproducible]
   E --> G[Click and Drag 4 Life \nAlso Fine]
+  class A,B,C,D,E,F,G myStyle;
 ```
 
 </div>

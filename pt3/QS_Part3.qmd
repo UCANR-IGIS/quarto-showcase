@@ -10,7 +10,7 @@ toc: false
 
 <section data-transition="convex">
 <h1>How to get your work out there!</h1>
-<span style="font-size:36px;color: #005fae;">12-12-2025<br></span>
+<span style="font-size:36px;color: #005fae;">12-11-2025<br></span>
 <div style="text-align:center;">
 :::: {.columns gap="2em"}
 ::: {.column}
@@ -66,5 +66,18 @@ toc: false
     <li class="fragment"> [AWS3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html) offers static website hosting as well.</li><br>
   </ul>
 <p class="fragment"> There are [MANY](https://quarto.org/docs/publishing/) options for publishing, but GitHub tends to be favored by academics since it also offers version control and collaborative project management.</p>
+
+</section>
+
+<section>
+
+```{mermaid}
+%% flowchart TD
+%%     A[Write content in Quarto] --> B[Render to HTML]
+%%     B --> C[Preview in browser]
+%%     C --> D[Publish online<br>(GitHub Pages, RStudio Connect, Netlify)]
+%%     A --> E[Use Markdown, R/Python/Julia chunks,<br>and Visualizations]
+%%     D --> F[Share with audience]
+```
 
 </section>

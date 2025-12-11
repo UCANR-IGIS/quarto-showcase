@@ -11,7 +11,7 @@ css: ucanr-style.css
 ---
 
 <h1 style="font-size:48px;"><strong>Quarto Showcase</strong></h1>
-<span style="font-size:24px;color: #005fae;"><em>12-11-2025</em><br></span>
+<span style="font-size:28px;color: #005fae;">12-11-2025<br></span>
 
 <div style="text-align:center;">
 :::: {.columns gap="1em"}
