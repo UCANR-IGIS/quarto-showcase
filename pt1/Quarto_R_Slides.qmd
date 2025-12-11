@@ -36,7 +36,7 @@ toc: false
 
 <section data-transition="fade">
 <h1>Quarto Showcase</h1>
-<span style="font-size:36px;color: #005fae;">12-12-2025</em></span>
+<span style="font-size:36px;color: #005fae;">12-11-2025</em></span>
 <div style="text-align:center;">
 :::: {.columns gap="2em" align="center"}
 ::: {.column text-align="center"}
