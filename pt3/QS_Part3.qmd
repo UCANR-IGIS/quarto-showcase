@@ -98,10 +98,10 @@ flowchart TD
   A["Write content in Quarto<br/>(locally)"] --> B("Use Markdown, R, Python")
   B --> C("Render to HTML")
   C --> D("Preview in browser")
-  B --> E("Publish Rendered Content<br/>GitHub Pages, Netlify")
+  B --> E("Publish Rendered Content<br/>GitHub Pages, AWS S3, Netlify")
   E --> F["Share with audience!"]
   B --> G("Push qmd files<br/>to GitHub")
-  G --> H("Online service renders<br/>content: GitHub Actions,<br/>Quarto-Pub, AWS Applify")
+  G --> H("Online service renders<br/>content: GitHub Actions,<br/>Quarto-Pub")
   H --> I["Share with audience!"]
   
   classDef blueBox fill:#b9e2ff,stroke:#467991,stroke-width:2px
@@ -111,6 +111,27 @@ flowchart TD
 ```
 
 :::
+
+## For Private Eyes Only
+
+If you want to publish content but make it available to specific people only, you need a web service that supports authentication / user accounts. 
+
+::: {style="font-size:90%; margin-left:1em;"}
+
+- GitHub Enterprise accounts allows you to limit access to GH pages on a private to GitHub who have access permissions  ([example](https://glowing-adventure-mwk7kwp.pages.github.io/groundwater-basins-import.html))
+
+- Organizational web servers
+
+- Other paid services like Netlify, AWS Amplify, Posit Connect, etc.
+
+:::
+
+## End! {.center}
+
+
+
+
+
 
 
 

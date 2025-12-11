@@ -217,10 +217,10 @@ RPubs is free, but everything is completely public!</p>
   A["Write content in Quarto&lt;br/&gt;(locally)"] --&gt; B("Use Markdown, R, Python")
   B --&gt; C("Render to HTML")
   C --&gt; D("Preview in browser")
-  B --&gt; E("Publish Rendered Content&lt;br/&gt;GitHub Pages, Netlify")
+  B --&gt; E("Publish Rendered Content&lt;br/&gt;GitHub Pages, AWS S3, Netlify")
   E --&gt; F["Share with audience!"]
   B --&gt; G("Push qmd files&lt;br/&gt;to GitHub")
-  G --&gt; H("Online service renders&lt;br/&gt;content: GitHub Actions,&lt;br/&gt;Quarto-Pub, AWS Applify")
+  G --&gt; H("Online service renders&lt;br/&gt;content: GitHub Actions,&lt;br/&gt;Quarto-Pub")
   H --&gt; I["Share with audience!"]
   
   classDef blueBox fill:#b9e2ff,stroke:#467991,stroke-width:2px
@@ -234,6 +234,20 @@ RPubs is free, but everything is completely public!</p>
 </div>
 </div>
 </div>
+</section>
+<section id="for-private-eyes-only" class="slide level2">
+<h2>For Private Eyes Only</h2>
+<p>If you want to publish content but make it available to specific people only, you need a web service that supports authentication / user accounts.</p>
+<div style="font-size:90%; margin-left:1em;">
+<ul>
+<li><p>GitHub Enterprise accounts allows you to limit access to GH pages on a private to GitHub who have access permissions (<a href="https://glowing-adventure-mwk7kwp.pages.github.io/groundwater-basins-import.html">example</a>)</p></li>
+<li><p>Organizational web servers</p></li>
+<li><p>Other paid services like Netlify, AWS Amplify, Posit Connect, etc.</p></li>
+</ul>
+</div>
+</section>
+<section id="end" class="slide level2 center">
+<h2>End!</h2>
 
 </section></section>
     </div>
