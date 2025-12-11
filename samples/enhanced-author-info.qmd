@@ -1,0 +1,26 @@
+---
+title: "Deficit Irrigation in Pistachio"
+date: "October 22, 2025"
+format:
+  html:
+    page-layout: full
+    css: |
+      div#quarto-content {
+        grid-template-rows : none;
+      }
+author:
+  - name: Andy Lyons
+    orcid: 0000-0002-7505-6709
+    affiliations:
+      - name: IGIS, UC Division of Agriculture and Natural Resources
+        url: https://igis.ucanr.edu/
+    corresponding: true
+    email: andlyons@ucanr.edu
+engine: knitr    
+---
+
+```{css echo = FALSE}
+div#quarto-content {
+  grid-template-rows: none;
+}
+```

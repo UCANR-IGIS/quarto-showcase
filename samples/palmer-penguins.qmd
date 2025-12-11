@@ -5,18 +5,20 @@ format: html
 
 ## About the Penguins
 
-The palmerpenguins data contains size measurements for three penguin species observed on three islands in the Palmer Archipelago, Antarctica.
+The palmerpenguins data contains size measurements for three penguin species observed on three islands in the [Palmer Archipelago](), Antarctica.
 
 ![](images/palmer-archipelago.jpg)
 
 There are three species of penguins in the dataset:
 
 ```{r}
-library(dplyr)
+library(dplyr, warn.conflicts = FALSE)
 penguins |> 
   group_by(island, species) |> 
-  summarize(count = n())
+  summarize(count = n(), .groups = "drop")
 ```
+
+## Body Mass Comparison
 
 Adelie and Chinstrap penguins have approximately the same body mass. Gentoo penguins however are noticeably bigger.
 

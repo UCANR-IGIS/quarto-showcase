@@ -2,46 +2,268 @@
 title: "Part 2: HTML Outputs"
 format: 
   revealjs:
-    # smaller: false
-    # fontsize: "28pt"
     theme: simple
-    logo: images/igis-logo_pin-only_80x100.png
-    footer: "Quarto Showcase"
-css: qmdpres.css
+    auto-stretch: false
+    # smaller: false
+    fontsize: "24pt"
+    # footer: "Quarto Showcase"
+    logo: images/igis-ucce.svg
+    code-block-height: 650px
+    css: qmdpres.css
 ---
+
+## It all starts with a qmd file
+
+
+![](./images/render_btn_168x50.png){style="display:block; margin:1em auto; width:130px;"}
+
+::: {style="text-align: center;"}
+
+```{mermaid}
+flowchart LR
+  A[qmd] --> B(Jupyter)
+  A --> C(knitr)
+  B --> D[md]
+  C --> D
+  D --> E(pandoc)
+  E --> F[pdf]
+  E --> G[html]
+  E --> H[docx]
+  
+  classDef yellowBox fill:#FFFFC0
+  class B,C,E yellowBox
+```
+
+:::
 
 ## Anatomy of a Quarto Document
 
+```` markdown
+---
+title: "The Palmer Penguins"
+format: html
+---
+
+## About the Penguins
+
+The palmerpenguins data contains size measurements for three penguin species 
+observed on three islands in the 
+[Palmer Archipelago](https://en.wikipedia.org/wiki/Palmer_Archipelago), 
+Antarctica.
+
+![](images/palmer-archipelago.jpg)
+
+There are three species of penguins in the dataset:
+
+```{r}
+library(dplyr)
+penguins |> 
+  group_by(island, species) |> 
+  summarize(count = n())
+```
+
+## Body Mass Comparison
+
+Adelie and Chinstrap penguins have approximately the same body mass. 
+Gentoo penguins however are noticeably bigger.
+
+```{r}
+library(ggplot2)
+ggplot(penguins, aes(x = species, y = body_mass)) +
+  geom_boxplot()
+```
+
+````
+
+\
+
+\
+
 ::: {.notes}
+Quarto files are plain text.
+
 Open palmer-penguins.qmd in RStudio.
 
-Show them source vs. visual editing mode.
+Show source vs. visual editing mode.
 
-Show them how to run code-chunks inline.
+Show the YAML, paragraph text, code chunks.
+
+How to run code-chunks inline.
 
 Set the preview to Viewer Pane.
 
 Render the document to the Viewer Pane
+:::
+
+## Example: Data Analysis Notebook
+\
+
+:::{style="text-align:center;"}
+<https://ucanr-igis.github.io/tech_notes/cropdist-dwr-local-stats.html>
+:::
+
+::: {.notes}
+Highlights:
+- header
+- enhanced author info
+- table of contents pane
+- anchors at all headings
+- footnotes
+- code chunks: copy button
+- code chunks: code links
+- widgets
+- callout blocks
+- emoji (Which attribute field contains the ‘crop’?)
+:::
+
+
+## Markdown favorites: Callout Blocks
+
+\
+
+Quarto has several 'callout blocks' that you can use to add text boxes.
+
+```` markdown
+::: {.callout-important}
+## Don't foreget to add a user-agent to your `httr2` header
+
+The __User-Agent__ header is an HTTP header intended to identify the user agent responsible 
+for making a given HTTP request. 
+:::
+````
+
+::: {.downarrow}
+&darr; &darr; &darr;
+:::
+
+::: {.callout-important}
+## Don't foreget to add a user-agent to your `httr2` header
+
+The __User-Agent__ header is an HTTP header intended to identify the user agent responsible for making a given HTTP request. 
+:::
+
+\
+
+Other callout types: `note`, `warning`, `tip`, `caution`
+
+## Markdown favorites: Hyperlinks
+
+\
+
+Hyperlinks are easy to add to text. 
+
+```` markdown
+For more info, please visit our [training page](https://igis.ucanr.edu/Training/).
+````
+
+::: {.downarrow}
+&darr; &darr; &darr;
+:::
+
+For more info, please visit our [training page](https://igis.ucanr.edu/Training/).
+
+\
+
+::: {.callout-tip}
+If you want a hyperlink to open in a **new tab**, add the target attribute:
+
+```` markdown
+For more info, please visit our [training page](https://igis.ucanr.edu/Training/){target='_blank'}.
+````
 
 :::
 
-## Some of My Favorite Quarto YAML
+::: {.notes}
+See also https://quarto.org/docs/authoring/markdown-basics.html
+:::
+
+## Markdown favorites: blank line
+
+\
+
+Sometimes, you just want a...
+
+\
+
+blank \
+
+\
+
+line!!
+
+\
+
+Your best friend: `\`
+
+```` markdown
+Spread
+
+\
+
+this
+
+\ 
+
+out!
+````
 
 
-## Some of My Favorite Quarto Markdown
+## Markdown favorites: Footnotes
+
+\
+
+```` markdown
+Growers in the Valley may have to manage one additional generation of Navel orangeworm each 
+season under climate change [^1].
+
+[^1]: based on a degree day model with project climate data, see Pathak et al (2021)
+````
+::: {.downarrow}
+&darr; &darr; &darr;
+:::
+
+Growers in the Valley may have to manage one additional generation of Navel orangeworm each season under 
+climate change [^1].
+
+[^1]: based on a degree day model with project climate data, see Pathak et al (2021)
+
+\
+
+::: {.callout-note}
+## Footnote Tips
+
+- footnotes will be auto-numbered
+- on a HTML document, footnote numbers get hyperlinked to the note  
+:::
+
+## YAML Favorites: Author Info
+
+``` yaml
+---
+title: "Deficit Irrigation in Pistachio"
+author:
+  - name: Andy Lyons
+    orcid: 0000-0002-7505-6709
+    affiliations:
+      - name: IGIS, UC Division of Agriculture and Natural Resources
+        url: https://igis.ucanr.edu/
+    corresponding: true
+    email: andlyons@ucanr.edu
+---
+```
+
+::: {.downarrow}
+&darr; &darr; &darr;
+:::
+
+```{=html}
+<iframe src="../samples/enhanced-author-info.html" width="100%" height="240" style="border:1px solid gray;"></iframe>
+```
+
+## YAML Favorites: Paged Tables
 
 
 
-
-## Example: Data Analysis Notebook
-
-
-### My Favorite Features
-
-- author info
-- paged tabled
-- interactive visualizations
-- footnotes  
 
 ## Examples
 
@@ -57,7 +279,7 @@ Render the document to the Viewer Pane
 
 Quarto can generate presentations in 3 formats:
 
-![](./images/new-quarto-slides576x512x256.png)
+![](./images/new-quarto-slides576x512x256.png){style="display:block; margin:1em auto; border:1px solid grey;"}
 
 ::: {.notes}
 You can create slides in revealjs, beamer (requires LaTeK), or PowerPoint
@@ -80,6 +302,14 @@ You can create slides in revealjs, beamer (requires LaTeK), or PowerPoint
 If you can't remember these keyboard shortcuts, just click the menu button and go to 'Tools'.
 :::
 
+## Quarto Websites
+
+\
+
+:::{style="text-align:center;"}
+[https://nasa-openscapes.github.io/](https://nasa-openscapes.github.io/){target="_blank" rel="noopener"}
+:::
+
 ## Getting Help: Guides, Community, Documentation
 
 ### Present like a Pro
@@ -89,10 +319,4 @@ If you can't remember these keyboard shortcuts, just click the menu button and g
 ### Tips 'n Tricks
 
  - <https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day>
-
-## Publishing Your Content
-
-will come at end
-
-
 
