@@ -1,15 +1,26 @@
 ---
-pagetitle: "Part 3: How to get your work out there!"
+pagetitle: "Part 4: Getting your work out there!"
 format: 
   revealjs:
     title-slide: false
+    transition: convex
+    background-transition: fade
+    auto-stretch: false
 theme: solarized
-css: ../ucanr-style.css
+# css: ../ucanr-style.css
 toc: false
+engine: knitr
 ---
 
-<section data-transition="convex">
-<h1>How to get your work out there!</h1>
+# Getting your work out there!
+
+```{css echo=FALSE}
+h1, h2, h3 {
+  text-transform: none !important;
+  color: #024780 !important;
+}
+```
+
 <span style="font-size:36px;color: #005fae;">12-11-2025<br></span>
 <div style="text-align:center;">
 :::: {.columns gap="2em"}
@@ -21,63 +32,86 @@ toc: false
 :::
 ::::
 </div>
-</section>
 
-<section data-transition="slide">
-<h2>Traditional Formats</h2>
-  <ul>
-    <li class="fragment">[Word](https://quarto.org/docs/reference/formats/docx.html)</li>
-    <li class="fragment">[pdf](https://quarto.org/docs/output-formats/pdf-basics.html)</li>
-    <li class="fragment">[Typst](https://quarto.org/docs/output-formats/typst.html), an open-source typesetting system (revised LaTeX).</li>
-</section>
+## Traditional Formats
 
-<section data-transition="slide">
-<h2>Less Traditional Formats</h2>
-<p> <em>allow us to take advantage of some of the cooler bells and whistles Quarto offers!</em></p>
-<p> [HTML](https://quarto.org/docs/output-formats/html-basics.html) offers great interaction with other platforms and many possibilities:</p>
-  <ul>
-    <li class="fragment"> [Webpages](https://ucanr-igis.github.io/quarto-showcase/)</li>
-    <li class="fragment"> Blogs</li>
-    <li class="fragment"> Slides (like these made using [revealjs](https://quarto.org/docs/presentations/revealjs/))</li>
-    <li class="fragment"> Widgets (like the intro map) and [dashboards](https://jjallaire.shinyapps.io/penguins-dashboard/).</li>
-</section>
+\
 
-<section data-auto-animate>
-<h2>[Publishing Platforms](https://quarto.org/docs/publishing/)</h2>
-<p><em>allow users to publish or host their html-generated content.</em></p>
-<p> <strong>[GitHub](https://github.com/UCANR-IGIS/quarto-showcase)</strong> is a common platform for collaborative work and publishing lightweight pages</p>
-  <ul>
-    <li class="fragment"> Users create a ["repository" or repo](https://github.com/UCANR-IGIS/quarto-showcase)</li>
-    <li class="fragment"> Users work locally in their projects (qmd or notebooks)</li>
-    <li class="fragment"> Publish to the repo (including rendered html products)</li>
-    <li class="fragment"> ... and connect them to [GitHub pages](https://ucanr-igis.github.io/quarto-showcase/) </li>
-    <li class="fragment"> Alternatively: [GitHub Actions](https://quarto.org/docs/publishing/github-pages.html)</li>
-    <li class="fragment"> Example: [NASA Openscapes Page](https://nasa-openscapes.github.io/) and [repo](https://github.com/nasa-openscapes) 
-  </ul>
+- [Word](https://quarto.org/docs/reference/formats/docx.html)
+- [pdf](https://quarto.org/docs/output-formats/pdf-basics.html) (created with LaTeK or [Typst](https://quarto.org/docs/output-formats/typst.html))  
+
+There are all **single files**. 
   
-</section>
+Share them as you would **any other file** (e.g., email, Google Drive, Box).
 
-<section data-auto-animate>
-<h2>[Publishing Platforms](https://quarto.org/docs/publishing/)</h2>
-<p><em>allow users to publish or host their html-generated content.</em></p>
-  <ul>
-    <li class="fragment"> [Quarto Pub](https://quarto.org/docs/publishing/quarto-pub.html) easily publishes small quarto projects as static websites visible to the public.</li>
-    <li class="fragment"> [Netlify](https://quarto.org/docs/publishing/netlify.html) is a professional platform for web publishing with more featuers (and a limited free plan).</li>
-    <li class="fragment"> [AWS3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html) offers static website hosting as well.</li><br>
-  </ul>
-<p class="fragment"> There are [MANY](https://quarto.org/docs/publishing/) options for publishing, but GitHub tends to be favored by academics since it also offers version control and collaborative project management.</p>
+## HTML Output
 
-</section>
+\
 
-<section>
+If your rendered HTML output is a **single HTML file** (`embed-resources: true`), you can share it **like any other file**.
 
-```{mermaid}
-%% flowchart TD
-%%     A[Write content in Quarto] --> B[Render to HTML]
-%%     B --> C[Preview in browser]
-%%     C --> D[Publish online<br>(GitHub Pages, RStudio Connect, Netlify)]
-%%     A --> E[Use Markdown, R/Python/Julia chunks,<br>and Visualizations]
-%%     D --> F[Share with audience]
+\
+
+You may want to **publish** it on a **server** if:
+
+- the output file(s) are large
+- the output is multiple HTML files
+- you want to make it really easy to access
+- you want it to be discoverable
+
+## Publishing HTML: Easy Options
+
+::: {style="text-align:center;"}
+
+Look for this button in RStudio:  
+![](./image_assets/rstudio-publish_btn_214x60x256.png){style="display:inline; height:48px; margin-top:4px;"}  
+&darr; &darr; &darr;  
+![](./image_assets/rstudio-publish_dest_636x312x256.png){style="display:inline;"}
+
+example: <https://rpubs.com/ajlyons/ucanr-ac-map>  
+RPubs is free, but everything is completely public!
+:::
+
+## GitHub
+
+[GitHub](https://github.com/) is a popular platform for collaborative work.
+
+::: {style="font-size:90%; margin-left:1em;"}
+- it includes "GitHub Pages" for publishing lightweight content.
+- often a link in other publishing service
+:::
+
+Typical workflow:
+
+::: {style="font-size:90%; margin-left:1em;"}
+- Create a ["repository" (aka repo)](https://github.com/UCANR-IGIS/quarto-showcase) on GitHub.com
+- Work locally in projects (qmd or notebooks)
+- Commit and push (i.e., publish) qmd files and/or rendered html outputs to the repo
+:::
+
+## Publishing Workflows
+
+::: {style="text-align: center;"}
+
+```{mermaid, cache = TRUE}
+flowchart TD
+  A["Write content in Quarto<br/>(locally)"] --> B("Use Markdown, R, Python")
+  B --> C("Render to HTML")
+  C --> D("Preview in browser")
+  B --> E("Publish Rendered Content<br/>GitHub Pages, Netlify")
+  E --> F["Share with audience!"]
+  B --> G("Push qmd files<br/>to GitHub")
+  G --> H("Online service renders<br/>content: GitHub Actions,<br/>Quarto-Pub, AWS Applify")
+  H --> I["Share with audience!"]
+  
+  classDef blueBox fill:#b9e2ff,stroke:#467991,stroke-width:2px
+  classDef orangeBox fill:#f9c74f,stroke:#f9844a,stroke-width:2px
+  class A blueBox
+  class F,I orangeBox
 ```
 
-</section>
+:::
+
+
+
+

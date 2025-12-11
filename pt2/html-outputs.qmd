@@ -349,8 +349,6 @@ format:
 ---
 ```
 
-\
-
 ::: {.centerme}
 All YAML options:  
 <https://quarto.org/docs/reference/formats/html.html>  
@@ -470,23 +468,23 @@ format:
   #   documentclass: scrreprt
 ```
 
-## [Example:]{.title-prefix} Reports
+## [Example:]{.title-prefix} Quarto Reports
+
+\
 
 Have a lot of data? Create data-driven reports programmatically!
 
-For a single-page report:
-
+::: {.callout-tip title="Workflow for a Single-Page Report" collapse="true"}
 - Loop through rows in a table  
 - For each row, use  functions from [htmltools](https://rstudio.github.io/htmltools/) to generate the HTML output  
 - Quarto renders the whole thing to HMTL
 - Use headings & TOC for basic navigation  
+:::
 
 :::{style="text-align:center;"}
 Example:  
 <https://ucanr-igis.github.io/sketchbook/movie-catalog.html>
 :::
-
-\
 
 ::: {.callout-tip title="Parameterized Reports"}
 To create a separate HTML file for each record, Google 'parameterized Quarto reports'.
@@ -519,8 +517,8 @@ You can create slides in revealjs, beamer (requires LaTeK), or PowerPoint
 
 \
 
-::: {.callout-tip}
-More tips at: <https://quarto.org/docs/presentations/revealjs/presenting.html>
+::: {.callout-tip title="More Presentation Tips"}
+See: <https://quarto.org/docs/presentations/revealjs/presenting.html>
 :::
 
 ::: {.notes}

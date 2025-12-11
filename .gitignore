@@ -13,3 +13,4 @@ rsconnect
 *.bak
 /.quarto/
 pt2/*_cache
+pt3/*_cache
