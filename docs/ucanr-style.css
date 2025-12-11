@@ -108,3 +108,7 @@ reveal .mermaid svg {
   margin: 0 auto;
   background: transparent !important;
 }
+
+.small-column {
+  font-size: 5px; /* adjust to your desired size */
+}
