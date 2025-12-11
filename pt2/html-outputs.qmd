@@ -9,7 +9,7 @@ format:
     # smaller: false
     fontsize: "24pt"
     logo: images/igis-ucce.svg
-    code-block-height: 600px
+    code-block-height: 550px
     css: 
       - pt2.css
 engine: knitr
@@ -144,10 +144,10 @@ for making a given HTTP request.
 The __User-Agent__ header is an HTTP header intended to identify the user agent responsible for making a given HTTP request. 
 :::
 
-\
-
 ::: {.centerme}
-Other callout types: `note`, `warning`, `tip`, `caution`
+__TIPS:__  
+other callout types: `note`, `warning`, `tip`, `caution`  
+for a collapsable callout, add `collapse = TRUE`
 :::
 
 ## [Markdown Favorite:]{.title-prefix} Hyperlinks
@@ -196,8 +196,6 @@ blank \
 \
 
 line!!
-
-\
 
 ::: {style="text-align:center;"}
 Your best friend: `\`
@@ -338,25 +336,77 @@ penguins
 \
 
 :::{style="text-align:center;"}
-<https://ucanr-igis.github.io/tech_notes/cropdist-dwr-local-stats.html>
+<https://ucanr-igis.github.io/agroclimate-cookbook/>
 :::
 
 ::: {.notes}
 Show them:
 
-- header  
-- enhanced author info  
-- table of contents pane  
-- anchors at all headings  
-- footnotes  
-- code chunks: copy button  
-- code chunks: code links  
-- widgets  
-- callout blocks  
-- emoji (Which attribute field contains the ‘crop’?)  
+- search widget  
+- table of contents  
+- Chapter 3 > sample citation  
+- GitHub links  
+- hypothesis comments  
 :::
 
+## Anatomy of an e-Book
 
+The structure of an e-Book is setup in a file called `_quarto.yml`.
+
+``` yaml
+project:
+  type: book
+  output-dir: "docs"
+
+editor: source
+
+book:
+  title: "AgroClimate Cookbook"
+  subtitle: "Code recipes for working with weather-driven agricultural metrics"
+  editor:
+   - Andy Lyons
+  contributor:
+   - Chloe Faehndrich
+  date: today
+  cover-image: "cover.png"
+  chapters:
+    - index.qmd
+    - 01_data-wrangling.qmd
+    - 02_weather-data.qmd
+    - 03_simple-agroclim-metrics.qmd
+    - 04_degday.qmd
+    - 05_chill.qmd
+    - 06_agroclimate-rasters.qmd
+    - 07_modeled-climate-data.qmd
+    - 08_climate-analogues.qmd
+    - 99_other.qmd
+    - references.qmd
+  repo-url: https://github.com/ucanr-igis/agroclimate-cookbook/
+  repo-actions: 
+    - issue
+    - edit
+
+bibliography: references.bib
+
+comments:
+  hypothesis:
+    theme: clean
+    openSidebar: false
+
+format:
+  html:
+    theme: cosmo
+    df-print: paged
+    toc-depth: 4
+    toc-expand: 4
+    link-external-icon: true
+    link-external-newwindow: true
+    code-link: true
+
+  # We will add support for epub and pdf when it is a little more developed
+  # pdf:
+  #   documentclass: scrreprt
+```
 
 ## [Example:]{.title-prefix} Report generator
 
