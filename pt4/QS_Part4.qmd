@@ -77,10 +77,10 @@ Quarto can be used to integrate some [journal-specific templates](https://quarto
 
 :::: {.columns gap=".2em"}
 ::: column
-- [Example 1: Dr. Ganghe](https://drganghe.github.io/quarto-academic-site-examples.html)  
+- [Tips and Tricks](https://drganghe.github.io/quarto-academic-site-examples.html)  
 :::
 ::: column
-- [Example 2: Silvia Canelon](https://silviacanelon.com/)  
+- [Example: Silvia Canelon](https://silviacanelon.com/)  
 :::
 ::::
 
@@ -95,13 +95,11 @@ Quarto can be used to integrate some [journal-specific templates](https://quarto
 
 [PositConf:2025 talks](https://quarto.org/docs/blog/posts/2025-11-24-conf-talk-videos/)
 
-- Custom internal templates and Reporting
+- Custom templates and reporting
 - Reproducible, dynamic, and elegant books with Quarto
 - Dynamic Data Storytelling with Quarto Emails
-- JSquarto: Bridging JavaScript Documentation with Quarto’s Power
+- JSquarto: Bridging JavaScript documentation with Quarto
 - DataPages for interactive data sharing using Quarto
-- Democratizing Organizational Surveys with Quarto and Shiny
-- surveydown: A Markdown-Based Platform for Interactive Surveys
+- Democratizing organizational surveys with Quarto and Shiny
+- surveydown: A markdown-based platform for interactive Surveys
 - AI and LLM topics
-
----
