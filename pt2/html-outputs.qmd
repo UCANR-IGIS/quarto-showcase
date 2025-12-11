@@ -183,7 +183,7 @@ For more info, please visit our [training page](https://igis.ucanr.edu/Training/
 See also https://quarto.org/docs/authoring/markdown-basics.html
 :::
 
-## [Markdown Favorite:]{.title-prefix} blank line
+## [Markdown Favorite:]{.title-prefix} Add a blank line
 
 \
 
@@ -262,15 +262,18 @@ plot_ly(data = penguins, x = ~bill_len, y = ~bill_dep, color = ~species) |>
 &darr; &darr; &darr;
 :::
 
-```{r plotly_example, message=FALSE}
+::: {id="penguins_plotly"}
+
+```{r plotly_example}
 library(plotly)
 
 plot_ly(data = penguins, x = ~bill_len, y = ~bill_dep, color = ~species) |> 
   layout(title = "Penguins: Bill depth vs. length", 
          xaxis = list(title = "length"),
-         yaxis = list(title = "depth"),
-         margin = list(pad = 10))
+         yaxis = list(title = "depth"))
 ```
+
+:::
 
 \
 
@@ -304,9 +307,6 @@ author:
 <iframe src="../samples/enhanced-author-info.html" width="100%" height="240" style="border:1px solid gray;"></iframe>
 ```
 
-
-## [Markdown Favorite:]{.title-prefix} emoji
-
 \
 
 ## [YAML Favorite:]{.title-prefix} Paged Tables {.scrollable}
@@ -323,19 +323,78 @@ format:
 &darr; &darr; &darr;
 :::
 
-```{r penguins_tbl}
+```{r penguins_tbl, rows.print=8}
 penguins
 ```
 
+## [More YAML Favorites:]{.title-prefix} Table-of-Contents, Code-Links, Code-Tools, and Single File
 
+``` yaml
+---
+format:
+  html:
+    ## To have a TOC, add the following
+    toc: true
+    toc-depth: 2
+    toc-expand: 3
+    
+    ## Add hyperlinks in code chunks to online help pages
+    code-link: true
+
+    ## Embed the qmd file
+    code-tools: true
+
+    ## Create a single HTML file
+    embed-resources: true
+---
+```
+
+\
+
+::: {.centerme}
+All YAML options: <https://quarto.org/docs/reference/formats/html.html>  
+:::
 
 ## [Example:]{.title-prefix} e-Book
 
 \
 
+**Awesome e-Book Features:**
+
+:::: {.columns style="font-size:90%; column-gap: 2em;" }
+
+::: {.column width="30%"}
+- table of contents pane  
+- previous & next buttons  
+- professional themes  
+- light & dark mode
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="25%"}
+- citation shortcodes  
+- cross-references  
+- GitHub links  
+- 3rd party plugins
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="25%"}
+- search widget  
+- download as pdf & epub  
+- author info in sidebar  
+
+:::
+::::
+
 \
 
 :::{style="text-align:center;"}
+Example:  
 <https://ucanr-igis.github.io/agroclimate-cookbook/>
 :::
 

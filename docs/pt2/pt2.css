@@ -37,6 +37,7 @@ span.title-prefix {
 }
 div.plotly {
   border: 15px solid white;
+  height:500px !important;
 }
 div.pagedtable-wrapper {
   background-color: white;
@@ -46,6 +47,9 @@ div.pagedtable-footer {
 }
 section.scrollable {
   padding-right:20px;
+}
+div#penguins_plotly > div > div {
+  overflow-x: visible;
 }
 
 
