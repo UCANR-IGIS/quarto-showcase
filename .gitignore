@@ -11,5 +11,4 @@ rsconnect
 .Renviron
 ~*
 *.bak
-
 /.quarto/

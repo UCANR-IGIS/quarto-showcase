@@ -28,4 +28,24 @@ div.centerme {
 svg#mermaid-1 {
   max-width: 800px !important;
 }
+span.title-prefix {
+  color: #555;
+  font-size: 66%;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-family: Lato;
+}
+div.plotly {
+  border: 15px solid white;
+}
+div.pagedtable-wrapper {
+  background-color: white;
+}
+div.pagedtable-footer {
+  font-size: 0.6em;
+}
+section.scrollable {
+  padding-right:20px;
+}
+
 

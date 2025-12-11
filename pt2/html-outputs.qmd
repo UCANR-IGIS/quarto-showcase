@@ -1,9 +1,10 @@
 ---
 title: "Part 2: HTML Outputs"
-pagetitle: "Quarto Pt2"
+pagetitle: "Pt2 Quarto Showcase"
 format: 
   revealjs:
     theme: simple
+    df-print: paged
     auto-stretch: false
     # smaller: false
     fontsize: "24pt"
@@ -96,6 +97,8 @@ ggplot(penguins, aes(x = species, y = body_mass)) +
 
 \
 
+\
+
 :::{style="text-align:center;"}
 <https://ucanr-igis.github.io/tech_notes/cropdist-dwr-local-stats.html>
 :::
@@ -147,7 +150,7 @@ The __User-Agent__ header is an HTTP header intended to identify the user agent 
 Other callout types: `note`, `warning`, `tip`, `caution`
 :::
 
-## Markdown favorites: Hyperlinks
+## [Markdown Favorite:]{.title-prefix} Hyperlinks
 
 \
 
@@ -180,7 +183,7 @@ For more info, please visit our [training page](https://igis.ucanr.edu/Training/
 See also https://quarto.org/docs/authoring/markdown-basics.html
 :::
 
-## Markdown favorites: blank line
+## [Markdown Favorite:]{.title-prefix} blank line
 
 \
 
@@ -217,7 +220,7 @@ out!
 There should not be a space after the \
 :::
 
-## Markdown favorites: Footnotes
+## [Markdown Favorite:]{.title-prefix} Footnotes
 
 \
 
@@ -245,7 +248,41 @@ climate change [^1].
 - on a HTML document, footnote numbers get hyperlinked to the note  
 :::
 
-## YAML Favorites: Author Info
+## [Markdown Favorite:]{.title-prefix} Interactive Plots {.scrollable}
+
+\
+
+````{verbatim, lang="markdown"}
+library(plotly)
+plot_ly(data = penguins, x = ~bill_len, y = ~bill_dep, color = ~species) |> 
+  layout(title = "Penguins: Bill depth vs. length", 
+         xaxis = list(title = "length"),
+         yaxis = list(title = "depth"))
+````
+
+::: {.downarrow}
+&darr; &darr; &darr;
+:::
+
+```{r plotly_example, message=FALSE}
+library(plotly)
+
+plot_ly(data = penguins, x = ~bill_len, y = ~bill_dep, color = ~species) |> 
+  layout(title = "Penguins: Bill depth vs. length", 
+         xaxis = list(title = "length"),
+         yaxis = list(title = "depth"),
+         margin = list(pad = 10))
+```
+
+\
+
+::: {.notes}
+ - hover text  
+ - zoom in & out  
+ - display / hide series from the legend
+:::
+
+## [YAML Favorite:]{.title-prefix} Author Info
 
 ``` yaml
 ---
@@ -269,16 +306,60 @@ author:
 <iframe src="../samples/enhanced-author-info.html" width="100%" height="240" style="border:1px solid gray;"></iframe>
 ```
 
-## YAML Favorites: Paged Tables
+
+## [Markdown Favorite:]{.title-prefix} emoji
+
+\
+
+## [YAML Favorite:]{.title-prefix} Paged Tables {.scrollable}
+
+``` yaml
+---
+format:
+  html:
+    df-print: paged
+---
+```
+
+::: {.downarrow}
+&darr; &darr; &darr;
+:::
+
+```{r penguins_tbl}
+penguins
+```
 
 
 
+## [Example:]{.title-prefix} e-Book
 
-## Example: e-Book
+\
+
+\
+
+:::{style="text-align:center;"}
+<https://ucanr-igis.github.io/tech_notes/cropdist-dwr-local-stats.html>
+:::
+
+::: {.notes}
+Show them:
+
+- header  
+- enhanced author info  
+- table of contents pane  
+- anchors at all headings  
+- footnotes  
+- code chunks: copy button  
+- code chunks: code links  
+- widgets  
+- callout blocks  
+- emoji (Which attribute field contains the ‘crop’?)  
+:::
 
 
 
-## Report generator
+## [Example:]{.title-prefix} Report generator
+
 
 
 
@@ -317,7 +398,7 @@ More tips at: <https://quarto.org/docs/presentations/revealjs/presenting.html>
 If you can't remember these keyboard shortcuts, just click the menu button and go to 'Tools'.
 :::
 
-## Other Quarto HTML Outputs
+## Other HTML Outputs from Quarto
 
 \
 
@@ -344,4 +425,22 @@ Dashboards:
 ### Tips 'n Tricks
 
  - <https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day>
+
+## Getting Help: GenAI
+
+\
+
+::: {style = "margin:0 2em; font-size:120%; font-style:italic; font-family:serif; color:#444;"}
+I'm making a revealjs slide deck with Quarto, which I will present on a projector in a classroom. How do I make the font bigger on all of my slides, so students in the back of the room can see everything clearly.
+:::
+
+\
+
+::: {.callout-tip}
+## Tips for Using GenAI
+
+- ask a clear, straight forward question  
+- provide context about the setting and your goal
+- make sure you're in compliance with your organization's GenAI policies
+:::
 
