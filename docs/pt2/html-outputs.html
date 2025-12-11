@@ -74,6 +74,190 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="html-outputs_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
+<<<<<<< Updated upstream
+=======
+  <title>Part 2: HTML Outputs</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="html-outputs_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="html-outputs_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="html-outputs_files/libs/revealjs/dist/theme/quarto-baf6b33ad82fed5d58a1babb4149bbb2.css">
+  <link rel="stylesheet" href="qmdpres.css">
+  <link href="html-outputs_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="html-outputs_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="html-outputs_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="html-outputs_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+  <script src="html-outputs_files/libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="html-outputs_files/libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="html-outputs_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
+>>>>>>> Stashed changes
 </head>
 
 <body class="quarto-light">
@@ -131,6 +315,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
+<<<<<<< Updated upstream
 <section id="anatomy-of-a-quarto-document" class="level2">
 <h2 class="anchored" data-anchor-id="anatomy-of-a-quarto-document">Anatomy of a Quarto Document</h2>
 <div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
@@ -252,11 +437,97 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+=======
+<section id="it-all-starts-with-a-qmd-file" class="slide level2">
+<h2>It all starts with a qmd file</h2>
+<p><img data-src="./images/render_btn_168x50.png" style="display:block; margin:1em auto; width:130px;"></p>
+<div style="text-align: center;">
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  A[qmd] --&gt; B(Jupyter)
+  A --&gt; C(knitr)
+  B --&gt; D[md]
+  C --&gt; D
+  D --&gt; E(pandoc)
+  E --&gt; F[pdf]
+  E --&gt; G[html]
+  E --&gt; H[docx]
+  
+  classDef yellowBox fill:#FFFFC0
+  class B,C,E yellowBox
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="anatomy-of-a-quarto-document" class="slide level2">
+<h2>Anatomy of a Quarto Document</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href=""></a><span class="co">---</span></span>
+<span id="cb1-2"><a href=""></a><span class="an">title:</span><span class="co"> "The Palmer Penguins"</span></span>
+<span id="cb1-3"><a href=""></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb1-4"><a href=""></a><span class="co">---</span></span>
+<span id="cb1-5"><a href=""></a></span>
+<span id="cb1-6"><a href=""></a><span class="fu">## About the Penguins</span></span>
+<span id="cb1-7"><a href=""></a></span>
+<span id="cb1-8"><a href=""></a>The palmerpenguins data contains size measurements for three penguin species </span>
+<span id="cb1-9"><a href=""></a>observed on three islands in the </span>
+<span id="cb1-10"><a href=""></a><span class="co">[</span><span class="ot">Palmer Archipelago</span><span class="co">](https://en.wikipedia.org/wiki/Palmer_Archipelago)</span>, </span>
+<span id="cb1-11"><a href=""></a>Antarctica.</span>
+<span id="cb1-12"><a href=""></a></span>
+<span id="cb1-13"><a href=""></a><span class="al">![](images/palmer-archipelago.jpg)</span></span>
+<span id="cb1-14"><a href=""></a></span>
+<span id="cb1-15"><a href=""></a>There are three species of penguins in the dataset:</span>
+<span id="cb1-16"><a href=""></a></span>
+<span id="cb1-17"><a href=""></a></span>
+<span id="cb1-18"><a href=""></a>::: {.cell}</span>
+<span id="cb1-19"><a href=""></a>::: {.cell-output .cell-output-stdout}</span>
+<span id="cb1-20"><a href=""></a></span>
+<span id="cb1-21"><a href=""></a><span class="in">```</span></span>
+<span id="cb1-22"><a href=""></a><span class="in"># A tibble: 5 × 3</span></span>
+<span id="cb1-23"><a href=""></a><span class="in"># Groups:   island [3]</span></span>
+<span id="cb1-24"><a href=""></a><span class="in">  island    species   count</span></span>
+<span id="cb1-25"><a href=""></a><span class="in">  &lt;fct&gt;     &lt;fct&gt;     &lt;int&gt;</span></span>
+<span id="cb1-26"><a href=""></a><span class="in">1 Biscoe    Adelie       44</span></span>
+<span id="cb1-27"><a href=""></a><span class="in">2 Biscoe    Gentoo      124</span></span>
+<span id="cb1-28"><a href=""></a><span class="in">3 Dream     Adelie       56</span></span>
+<span id="cb1-29"><a href=""></a><span class="in">4 Dream     Chinstrap    68</span></span>
+<span id="cb1-30"><a href=""></a><span class="in">5 Torgersen Adelie       52</span></span>
+<span id="cb1-31"><a href=""></a><span class="in">```</span></span>
+<span id="cb1-32"><a href=""></a></span>
+<span id="cb1-33"><a href=""></a></span>
+<span id="cb1-34"><a href=""></a>:::</span>
+<span id="cb1-35"><a href=""></a>:::</span>
+<span id="cb1-36"><a href=""></a></span>
+<span id="cb1-37"><a href=""></a></span>
+<span id="cb1-38"><a href=""></a><span class="fu">## Body Mass Comparison</span></span>
+<span id="cb1-39"><a href=""></a></span>
+<span id="cb1-40"><a href=""></a>Adelie and Chinstrap penguins have approximately the same body mass. </span>
+<span id="cb1-41"><a href=""></a>Gentoo penguins however are noticeably bigger.</span>
+<span id="cb1-42"><a href=""></a></span>
+<span id="cb1-43"><a href=""></a></span>
+<span id="cb1-44"><a href=""></a>::: {.cell}</span>
+<span id="cb1-45"><a href=""></a>::: {.cell-output-display}</span>
+<span id="cb1-46"><a href=""></a><span class="al">![](html-outputs_files/figure-revealjs/unnamed-chunk-3-1.png)</span>{width=960}</span>
+<span id="cb1-47"><a href=""></a>:::</span>
+<span id="cb1-48"><a href=""></a>:::</span>
+<span id="cb1-49"><a href=""></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+>>>>>>> Stashed changes
 <p><br>
 </p>
 <p><br>
 </p>
+<<<<<<< Updated upstream
 <div class="notes">
+=======
+<aside class="notes">
+>>>>>>> Stashed changes
 <p>Quarto files are plain text.</p>
 <p>Open palmer-penguins.qmd in RStudio.</p>
 <p>Show source vs.&nbsp;visual editing mode.</p>
@@ -266,13 +537,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Render the document to the Viewer Pane</p>
 </div>
 </section>
+<<<<<<< Updated upstream
 <section id="example-data-analysis-notebook" class="level2">
 <h2 class="anchored" data-anchor-id="example-data-analysis-notebook">Example: Data Analysis Notebook</h2>
+=======
+<section id="example-data-analysis-notebook" class="slide level2">
+<h2>Example: Data Analysis Notebook</h2>
+>>>>>>> Stashed changes
 <p><br>
 </p>
 <div style="text-align:center;">
 <p><a href="https://ucanr-igis.github.io/tech_notes/cropdist-dwr-local-stats.html" class="uri">https://ucanr-igis.github.io/tech_notes/cropdist-dwr-local-stats.html</a></p>
 </div>
+<<<<<<< Updated upstream
 <div class="notes">
 <p>Highlights: - header - enhanced author info - table of contents pane - anchors at all headings - footnotes - code chunks: copy button - code chunks: code links - widgets - callout blocks - emoji (Which attribute field contains the ‘crop’?)</p>
 </div>
@@ -304,22 +581,75 @@ Don’t foreget to add a user-agent to your <code>httr2</code> header
 <p>The <strong>User-Agent</strong> header is an HTTP header intended to identify the user agent responsible for making a given HTTP request.</p>
 </div>
 </div>
+=======
+<aside class="notes">
+<p>Highlights: - header - enhanced author info - table of contents pane - anchors at all headings - footnotes - code chunks: copy button - code chunks: code links - widgets - callout blocks - emoji (Which attribute field contains the ‘crop’?)</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="markdown-favorites-callout-blocks" class="slide level2">
+<h2>Markdown favorites: Callout Blocks</h2>
+<p><br>
+</p>
+<p>Quarto has several ‘callout blocks’ that you can use to add text boxes.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href=""></a>::: {.callout-important}</span>
+<span id="cb2-2"><a href=""></a><span class="fu">## Don't foreget to add a user-agent to your `httr2` header</span></span>
+<span id="cb2-3"><a href=""></a></span>
+<span id="cb2-4"><a href=""></a>The __User-Agent__ header is an HTTP header intended to identify the user agent responsible </span>
+<span id="cb2-5"><a href=""></a>for making a given HTTP request. </span>
+<span id="cb2-6"><a href=""></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="downarrow">
+<p>↓ ↓ ↓</p>
+</div>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Don’t foreget to add a user-agent to your <code>httr2</code> header</strong></p>
+</div>
+<div class="callout-content">
+<p>The <strong>User-Agent</strong> header is an HTTP header intended to identify the user agent responsible for making a given HTTP request.</p>
+</div>
+</div>
+</div>
+>>>>>>> Stashed changes
 <p><br>
 </p>
 <p>Other callout types: <code>note</code>, <code>warning</code>, <code>tip</code>, <code>caution</code></p>
 </section>
+<<<<<<< Updated upstream
 <section id="markdown-favorites-hyperlinks" class="level2">
 <h2 class="anchored" data-anchor-id="markdown-favorites-hyperlinks">Markdown favorites: Hyperlinks</h2>
 <p><br>
 </p>
 <p>Hyperlinks are easy to add to text.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>For more info, please visit our <span class="co">[</span><span class="ot">training page</span><span class="co">](https://igis.ucanr.edu/Training/)</span>.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+=======
+<section id="markdown-favorites-hyperlinks" class="slide level2">
+<h2>Markdown favorites: Hyperlinks</h2>
+<p><br>
+</p>
+<p>Hyperlinks are easy to add to text.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href=""></a>For more info, please visit our <span class="co">[</span><span class="ot">training page</span><span class="co">](https://igis.ucanr.edu/Training/)</span>.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+>>>>>>> Stashed changes
 <div class="downarrow">
 <p>↓ ↓ ↓</p>
 </div>
 <p>For more info, please visit our <a href="https://igis.ucanr.edu/Training/">training page</a>.</p>
 <p><br>
 </p>
+<<<<<<< Updated upstream
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -340,6 +670,38 @@ Tip
 </section>
 <section id="markdown-favorites-blank-line" class="level2">
 <h2 class="anchored" data-anchor-id="markdown-favorites-blank-line">Markdown favorites: blank line</h2>
+=======
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>If you want a hyperlink to open in a <strong>new tab</strong>, add the target attribute:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href=""></a>For more info, please visit our <span class="co">[</span><span class="ot">training page</span><span class="co">](https://igis.ucanr.edu/Training/)</span>{target='_blank'}.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>See also https://quarto.org/docs/authoring/markdown-basics.html</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="markdown-favorites-blank-line" class="slide level2">
+<h2>Markdown favorites: blank line</h2>
+>>>>>>> Stashed changes
 <p><br>
 </p>
 <p>Sometimes, you just want a…</p>
@@ -353,6 +715,7 @@ Tip
 <p><br>
 </p>
 <p>Your best friend: <code>\</code></p>
+<<<<<<< Updated upstream
 <div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>Spread</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>\</span>
@@ -387,6 +750,41 @@ Footnote Tips
 </div>
 </div>
 <div class="callout-body-container callout-body">
+=======
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href=""></a>Spread</span>
+<span id="cb5-2"><a href=""></a></span>
+<span id="cb5-3"><a href=""></a>\</span>
+<span id="cb5-4"><a href=""></a></span>
+<span id="cb5-5"><a href=""></a>this</span>
+<span id="cb5-6"><a href=""></a></span>
+<span id="cb5-7"><a href=""></a>\ </span>
+<span id="cb5-8"><a href=""></a></span>
+<span id="cb5-9"><a href=""></a>out!</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="markdown-favorites-footnotes" class="slide level2">
+<h2>Markdown favorites: Footnotes</h2>
+<p><br>
+</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href=""></a>Growers in the Valley may have to manage one additional generation of Navel orangeworm each </span>
+<span id="cb6-2"><a href=""></a>season under climate change <span class="ot">[^1]</span>.</span>
+<span id="cb6-3"><a href=""></a></span>
+<span id="cb6-4"><a href=""></a><span class="ot">[^1]: </span>based on a degree day model with project climate data, see Pathak et al (2021)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="downarrow">
+<p>↓ ↓ ↓</p>
+</div>
+<p>Growers in the Valley may have to manage one additional generation of Navel orangeworm each season under climate change <sup>1</sup>.</p>
+<p><br>
+</p>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Footnote Tips</strong></p>
+</div>
+<div class="callout-content">
+>>>>>>> Stashed changes
 <ul>
 <li>footnotes will be auto-numbered</li>
 <li>on a HTML document, footnote numbers get hyperlinked to the note<br>
@@ -394,6 +792,31 @@ Footnote Tips
 </ul>
 </div>
 </div>
+<<<<<<< Updated upstream
+=======
+</div>
+<aside><ol class="aside-footnotes"><li id="fn1"><p>based on a degree day model with project climate data, see Pathak et al (2021)</p></li></ol></aside></section>
+<section id="yaml-favorites-author-info" class="slide level2">
+<h2>YAML Favorites: Author Info</h2>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><a href=""></a><span class="pp">---</span></span>
+<span id="cb7-2"><a href=""></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Deficit Irrigation in Pistachio"</span></span>
+<span id="cb7-3"><a href=""></a><span class="fu">author</span><span class="kw">:</span></span>
+<span id="cb7-4"><a href=""></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Andy Lyons</span></span>
+<span id="cb7-5"><a href=""></a><span class="at">    </span><span class="fu">orcid</span><span class="kw">:</span><span class="at"> 0000-0002-7505-6709</span></span>
+<span id="cb7-6"><a href=""></a><span class="at">    </span><span class="fu">affiliations</span><span class="kw">:</span></span>
+<span id="cb7-7"><a href=""></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> IGIS, UC Division of Agriculture and Natural Resources</span></span>
+<span id="cb7-8"><a href=""></a><span class="at">        </span><span class="fu">url</span><span class="kw">:</span><span class="at"> https://igis.ucanr.edu/</span></span>
+<span id="cb7-9"><a href=""></a><span class="at">    </span><span class="fu">corresponding</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb7-10"><a href=""></a><span class="at">    </span><span class="fu">email</span><span class="kw">:</span><span class="at"> andlyons@ucanr.edu</span></span>
+<span id="cb7-11"><a href=""></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="downarrow">
+<p>↓ ↓ ↓</p>
+</div>
+<iframe src="../samples/enhanced-author-info.html" width="100%" height="240" style="border:1px solid gray;"></iframe>
+</section>
+<section id="yaml-favorites-paged-tables" class="slide level2">
+<h2>YAML Favorites: Paged Tables</h2>
+>>>>>>> Stashed changes
 </section>
 <section id="yaml-favorites-author-info" class="level2">
 <h2 class="anchored" data-anchor-id="yaml-favorites-author-info">YAML Favorites: Author Info</h2>
@@ -428,8 +851,13 @@ Footnote Tips
 <section id="presentations" class="level2">
 <h2 class="anchored" data-anchor-id="presentations">Presentations</h2>
 <p>Quarto can generate presentations in 3 formats:</p>
+<<<<<<< Updated upstream
 <p><img src="./images/new-quarto-slides576x512x256.png" class="img-fluid" style="display:block; margin:1em auto; border:1px solid grey;"></p>
 <div class="notes">
+=======
+<p><img data-src="./images/new-quarto-slides576x512x256.png" style="display:block; margin:1em auto; border:1px solid grey;"></p>
+<aside class="notes">
+>>>>>>> Stashed changes
 <p>You can create slides in revealjs, beamer (requires LaTeK), or PowerPoint</p>
 </div>
 </section>
@@ -475,18 +903,29 @@ Footnote Tips
 <p>If you can’t remember these keyboard shortcuts, just click the menu button and go to ‘Tools’.</p>
 </div>
 </section>
+<<<<<<< Updated upstream
 <section id="quarto-websites" class="level2">
 <h2 class="anchored" data-anchor-id="quarto-websites">Quarto Websites</h2>
+=======
+<section id="quarto-websites" class="slide level2">
+<h2>Quarto Websites</h2>
+>>>>>>> Stashed changes
 <p><br>
 </p>
 <div style="text-align:center;">
 <p><a href="https://nasa-openscapes.github.io/" target="_blank" rel="noopener">https://nasa-openscapes.github.io/</a></p>
 </div>
 </section>
+<<<<<<< Updated upstream
 <section id="getting-help-guides-community-documentation" class="level2">
 <h2 class="anchored" data-anchor-id="getting-help-guides-community-documentation">Getting Help: Guides, Community, Documentation</h2>
 <section id="present-like-a-pro" class="level3">
 <h3 class="anchored" data-anchor-id="present-like-a-pro">Present like a Pro</h3>
+=======
+<section id="getting-help-guides-community-documentation" class="slide level2">
+<h2>Getting Help: Guides, Community, Documentation</h2>
+<h3 id="present-like-a-pro">Present like a Pro</h3>
+>>>>>>> Stashed changes
 <ul>
 <li>https://quarto.org/docs/presentations/revealjs/presenting.html</li>
 </ul>
@@ -496,8 +935,21 @@ Footnote Tips
 <ul>
 <li><a href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day" class="uri">https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day</a></li>
 </ul>
+<<<<<<< Updated upstream
 </section>
 </section>
+=======
+
+</section>
+
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="images/igis-ucce.svg" class="slide-logo"></p>
+<div class="footer footer-default">
+
+</div>
+</div></div>
+>>>>>>> Stashed changes
 
 
 <div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
@@ -575,6 +1027,7 @@ Footnote Tips
         text: getTextToCopy,
         container: window.document.getElementById('quarto-embedded-source-code-modal')
       });
+<<<<<<< Updated upstream
       clipboardModal.on('success', onCopySuccess);
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
@@ -592,6 +1045,96 @@ Footnote Tips
           // links that we want to consider external
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
+=======
+    </script>
+    
+
+    <script>
+
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+
+      // slide changes (different for each slide format).
+
+      (function () {
+
+        // dispatch for htmlwidgets
+
+        function fireSlideEnter() {
+
+          const event = window.document.createEvent("Event");
+
+          event.initEvent("slideenter", true, true);
+
+          window.document.dispatchEvent(event);
+
+        }
+
+    
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+
+          fireSlideEnter();
+
+    
+
+          // dispatch for shiny
+
+          if (window.jQuery) {
+
+            if (previousSlide) {
+
+              window.jQuery(previousSlide).trigger("hidden");
+
+            }
+
+            if (currentSlide) {
+
+              window.jQuery(currentSlide).trigger("shown");
+
+            }
+
+          }
+
+        }
+
+    
+
+        // hookup for slidy
+
+        if (window.w3c_slidy) {
+
+          window.w3c_slidy.add_observer(function (slide_num) {
+
+            // slide_num starts at position 1
+
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+
+          });
+
+        }
+
+    
+
+      })();
+
+    </script>
+
+    
+
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+>>>>>>> Stashed changes
           }
         }
       }
