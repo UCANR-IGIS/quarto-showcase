@@ -1,9 +1,11 @@
 ---
-title: "Part 2: HTML Outputs"
+title: "Quarto Showcase"
+subtitle: "Part 2: HTML Outputs"
 pagetitle: "Pt2 Quarto Showcase"
 format: 
   revealjs:
     theme: simple
+    # theme: solarized
     df-print: paged
     auto-stretch: false
     # smaller: false
@@ -93,7 +95,7 @@ ggplot(penguins, aes(x = species, y = body_mass)) +
 - Render the document to the Viewer Pane  
 :::
 
-## Example: Data Analysis Notebook
+## Data Analysis Notebook {.exfav}
 
 \
 
@@ -119,9 +121,7 @@ Show them:
 :::
 
 
-## Markdown favorites: Callout Blocks
-
-\
+## Callout Blocks {.mdfav}
 
 Quarto has several 'callout blocks' that you can use to add text boxes.
 
@@ -150,9 +150,7 @@ other callout types: `note`, `warning`, `tip`, `caution`
 for a collapsable callout, add `collapse = TRUE`
 :::
 
-## [Markdown Favorite:]{.title-prefix} Hyperlinks
-
-\
+## Hyperlinks {.mdfav}
 
 Hyperlinks are easy to add to text. 
 
@@ -183,9 +181,54 @@ For more info, please visit our [training page](https://igis.ucanr.edu/Training/
 See also https://quarto.org/docs/authoring/markdown-basics.html
 :::
 
-## [Markdown Favorite:]{.title-prefix} Add a blank line
+## Footnotes {.mdfav}
 
-\
+````{verbatim, lang="markdown"}
+Growers in the Valley may have to manage one additional generation of Navel orangeworm each 
+season under climate change [^1].
+
+[^1]: based on a degree day model with project climate data, see Pathak et al (2021)
+````
+::: {.downarrow}
+&darr; &darr; &darr;
+:::
+
+Growers in the Valley may have to manage one additional generation of Navel orangeworm each season under 
+climate change [^1].
+
+[^1]: based on a degree day model with project climate data, see Pathak et al (2021)
+
+::: {.callout-note}
+## Footnote Tips
+
+- footnotes will be auto-numbered
+- on a HTML document, footnote numbers get hyperlinked to the note  
+:::
+
+## Markdown Tables {.mdfav}
+
+````{verbatim, lang="markdown"}
+|County       | Year       | Outreach                           |New Reg|
+|-------------|:----------:|:-----------------------------------|------:|
+|Trinity      | 2024       | Master Gardener meetings, FaceBook | 68    |
+|Humboldt     | 2023-24    | county fair, libraries, Pow Wow    | 30    |
+|Del Norte    | 2024       | river fest, radio ads              | 42    |
+|Siskiou      | 2025       | field day, 4H group, libraries     | 17    |
+````
+
+::: {.downarrow}
+&darr; &darr; &darr;
+:::
+
+|County    | Year       | Outreach                           |New Reg|
+|----------|:----------:|:-----------------------------------|------:|
+|Trinity   | 2024       | Master Gardener meetings, FaceBook | 68    |
+|Humboldt  | 2023-24    | county fair, libraries, Pow Wow    | 30    |
+|Del Norte | 2024       | river fest, radio ads              | 42    |
+|Siskiou   | 2025       | field day, 4H group, libraries     | 17    |
+
+
+## Add a blank line {.mdfav}
 
 Sometimes, you just want an actual...
 
@@ -218,37 +261,8 @@ out!
 There should not be a space after the \
 :::
 
-## [Markdown Favorite:]{.title-prefix} Footnotes
 
-\
-
-````{verbatim, lang="markdown"}
-Growers in the Valley may have to manage one additional generation of Navel orangeworm each 
-season under climate change [^1].
-
-[^1]: based on a degree day model with project climate data, see Pathak et al (2021)
-````
-::: {.downarrow}
-&darr; &darr; &darr;
-:::
-
-Growers in the Valley may have to manage one additional generation of Navel orangeworm each season under 
-climate change [^1].
-
-[^1]: based on a degree day model with project climate data, see Pathak et al (2021)
-
-\
-
-::: {.callout-note}
-## Footnote Tips
-
-- footnotes will be auto-numbered
-- on a HTML document, footnote numbers get hyperlinked to the note  
-:::
-
-## [Markdown Favorite:]{.title-prefix} Interactive Plots {.scrollable}
-
-\
+## Interactive Plots {.scrollable .mdfav}
 
 ````{verbatim, lang="markdown"}
 library(plotly)
@@ -283,7 +297,9 @@ plot_ly(data = penguins, x = ~bill_len, y = ~bill_dep, color = ~species) |>
  - display / hide series from the legend
 :::
 
-## [YAML Favorite:]{.title-prefix} Author Info
+
+
+## Author Info {.ymlfav}
 
 ``` yaml
 ---
@@ -309,7 +325,7 @@ author:
 
 \
 
-## [YAML Favorite:]{.title-prefix} Paged Tables {.scrollable}
+## Paged Tables {.scrollable .ymlfav}
 
 ``` yaml
 ---
@@ -327,7 +343,8 @@ format:
 penguins
 ```
 
-## [More YAML Favorites:]{.title-prefix} Table-of-Contents, Code-Links, Code-Tools, and Single File
+
+## Table-of-Contents, Code-Links, Code-Tools, Single File {.ymlfav}
 
 ``` yaml
 ---
@@ -354,9 +371,7 @@ All YAML options:
 <https://quarto.org/docs/reference/formats/html.html>  
 :::
 
-## [Example:]{.title-prefix} e-Book
-
-\
+## e-Book {.exfav}
 
 **Quarto e-Book Features:**
 
@@ -389,8 +404,6 @@ All YAML options:
 
 :::
 ::::
-
-\
 
 :::{style="text-align:center;"}
 Example:  
@@ -468,9 +481,7 @@ format:
   #   documentclass: scrreprt
 ```
 
-## [Example:]{.title-prefix} Quarto Reports
-
-\
+## Quarto Reports {.exfav}
 
 Have a lot of data? Create data-driven reports programmatically!
 
@@ -555,19 +566,16 @@ Dashboards:
 
 ## Getting Help: GenAI
 
-\
-
-::: {style = "margin:0 2em; font-size:120%; font-style:italic; font-family:serif; color:#444;"}
-I'm making a revealjs slide deck with Quarto, which I will present on a projector in a classroom. How do I make the font bigger on all of my slides, so students in the back of the room can see everything clearly.
-:::
-
-\
-
-::: {.callout-tip}
-## Tips for Using GenAI
+Tips: 
 
 - ask a clear, straight forward question  
 - provide context about the setting and your goal
 - make sure you're in compliance with your organization's GenAI policies
+
+\
+
+::: {style = "margin:0 2em; font-size:120%; font-style:italic; font-family:serif; color:#444;"}
+"I'm making a revealjs slide deck with Quarto, which I will present on a projector in a classroom. How do I make the font bigger on all of my slides, so students in the back of the room can see everything clearly."
 :::
 
+## THE END!
