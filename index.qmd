@@ -10,6 +10,8 @@ theme: solarized
 css: ucanr-style.css
 ---
 
+<!--------------------- REMEMBER TO MANUALLY MOVE INDEX.HTML TO /DOCS!! ------------------>
+
 <h1 style="font-size:48px;"><strong>Quarto Showcase</strong></h1>
 <span style="font-size:28px;color: #005fae;">12-11-2025<br></span>
 
@@ -28,7 +30,7 @@ css: ucanr-style.css
 
 ### [Part 2 - HTML Outputs](pt2/html-outputs.html)
 
-### Part 3 - Case Study: Using Quarto to Generate Custom Soil Reports 
+### [Part 3 - Case Study: Using Quarto to Generate Custom Soil Reports](pt3_case-study/quarto-case-study-soil-reports.pdf)
 
 ### [Part 4 - Getting Your Work Out There](pt3/QS_Part3.html)
 
